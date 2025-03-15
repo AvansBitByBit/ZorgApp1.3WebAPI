@@ -16,7 +16,21 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAuthorization();
+builder.Services
+    .AddIdentityApiEndpoints<IdentityUser>(options =>
+    {
+        options.User.RequireUniqueEmail = true;
 
+    })
+    .AddRoles<IdentityRole>()
+    .AddDapperStores(options =>
+    {
+        options.ConnectionString = builder.Configuration
+        .GetConnectionString("DapperIdentity");
+    });
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddTransient<IAuthenticationService, AspNetIdentityAuthenticationService>();
 
 var app = builder.Build();
 
@@ -27,7 +41,9 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-
+app.UseAuthorization();
+app.MapGroup("/account").MapIdentityApi<IdentityUser>();
+app.MapControllers().RequireAuthorization();
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
