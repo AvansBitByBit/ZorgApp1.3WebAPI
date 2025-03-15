@@ -33,7 +33,18 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddTransient<IAuthenticationService, AspNetIdentityAuthenticationService>();
 
 var app = builder.Build();
-
+app.MapPost("/account/logout",
+    async (SignInManager<IdentityUser> SignInManager,
+    [FromBody] object empty) =>
+    {
+        if (empty != null)
+        {
+            await SignInManager.SignOutAsync();
+            return Results.Ok();
+        }
+        return Results.Unauthorized();
+    })
+    .RequireAuthorization();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -41,12 +52,13 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.UseAuthorization();
+
 app.MapGroup("/account").MapIdentityApi<IdentityUser>();
 app.MapControllers().RequireAuthorization();
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
+app.UseAuthorization();
 
 app.UseAuthorization();
 
