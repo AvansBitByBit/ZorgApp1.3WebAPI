@@ -1,4 +1,4 @@
-namespace ZorgWebApi;
+namespace ZorgWebApi.Models;
 
 public class WeatherForecast
 {

@@ -30,14 +30,14 @@ builder.Services
     .AddRoles<IdentityRole>()
     .AddDapperStores(options =>
     {
-        options.ConnectionString = builder.Configuration
-        .GetConnectionString("DapperIdentity");
+        options.ConnectionString = builder.Configuration 
+        .GetConnectionString("ConnectionString"); // voor een localhost voeg in usersecret de connectionstring toe
     });
-builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpContextAccessor(); 
 builder.Services.AddTransient<IAuthenticationService, AspNetIdentityAuthenticationService>();
 
 var app = builder.Build();
-app.MapPost("/account/logout",
+app.MapPost("/account/logout", 
     async (SignInManager<IdentityUser> SignInManager,
     [FromBody] object empty) =>
     {
@@ -60,7 +60,7 @@ if (app.Environment.IsDevelopment())
 app.MapGroup("/account").MapIdentityApi<IdentityUser>();
 app.MapControllers().RequireAuthorization();
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(); 
 app.UseHttpsRedirection();
 app.UseAuthorization();
 

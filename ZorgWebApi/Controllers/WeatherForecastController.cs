@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ZorgWebApi.Models;
 
 namespace ZorgWebApi.Controllers;
 
