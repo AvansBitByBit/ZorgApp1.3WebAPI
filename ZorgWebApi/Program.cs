@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Avans.Identity.Dapper;
 using Dapper;
+using ZorgWebApi.Interfaces;
+using ZorgWebApi.Repository;
+using ZorgWebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

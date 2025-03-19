@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using ZorgWebApi.Models;
+using ZorgWebApi.Interfaces;
 
 [ApiController]
 [Route("api/[controller]")]

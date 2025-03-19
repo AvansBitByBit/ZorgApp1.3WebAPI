@@ -103,8 +103,7 @@
               "RelativeToolTip": "ZorgWebApi\\Repository\\Patient\\PatientRepository.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwCwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:31:36.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T15:31:36.674Z"
             },
             {
               "$type": "Document",
@@ -116,8 +115,7 @@
               "RelativeToolTip": "ZorgWebApi\\Controllers\\PatientController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:49:56.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T15:49:56.503Z"
             },
             {
               "$type": "Document",
@@ -129,8 +127,7 @@
               "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\aea8e482-dd1e-4b80-977b-798857c8d8ae\\secrets.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-19T20:13:08.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T20:13:08.76Z"
             },
             {
               "$type": "Document",
@@ -142,8 +139,7 @@
               "RelativeToolTip": "ZorgWebApi\\Models\\PatientModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:50:38.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T15:50:38.941Z"
             },
             {
               "$type": "Document",
@@ -155,8 +151,7 @@
               "RelativeToolTip": "ZorgWebApi\\Interfaces\\IPatientRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:31:25.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T15:31:25.27Z"
             },
             {
               "$type": "Document",
@@ -168,8 +163,7 @@
               "RelativeToolTip": "ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T15:54:41.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T15:54:41.51Z"
             },
             {
               "$type": "Document",
@@ -181,12 +175,7 @@
               "RelativeToolTip": "ZorgWebApi\\Models\\ZorgMomentModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T20:10:44.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "WhenOpened": "2025-03-19T20:10:44.501Z"
             },
             {
               "$type": "Document",
@@ -198,8 +187,7 @@
               "RelativeToolTip": "ZorgWebApi\\Models\\OuderVoogdModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:17:19.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T11:17:19.433Z"
             },
             {
               "$type": "Document",
@@ -211,8 +199,7 @@
               "RelativeToolTip": "ZorgWebApi\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T20:11:43.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T20:11:43.817Z"
             },
             {
               "$type": "Document",
@@ -224,8 +211,7 @@
               "RelativeToolTip": "ZorgWebApi\\Models\\TrajectModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T18:00:30.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T18:00:30.388Z"
             },
             {
               "$type": "Document",
@@ -237,8 +223,7 @@
               "RelativeToolTip": "ZorgWebApi\\Models\\TrajectZorgMomentModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T20:10:28.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T20:10:28.02Z"
             },
             {
               "$type": "Document",
@@ -250,8 +235,7 @@
               "RelativeToolTip": "ZorgWebApi\\Models\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T20:10:35.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T20:10:35.245Z"
             },
             {
               "$type": "Document",
@@ -276,6 +260,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T15:53:25.516Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         }
