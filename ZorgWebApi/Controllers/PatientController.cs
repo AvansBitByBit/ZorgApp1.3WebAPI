@@ -10,15 +10,25 @@ public class PatientController : ControllerBase
     private readonly ILogger<PatientController> _logger;
     private readonly IAuthenticationService _authenticationService;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="PatientController"/> class.
+    /// </summary>
+    /// <param name="logger">The logger instance.</param>
+    /// <param name="authenticationService">The authentication service instance.</param>
     public PatientController(ILogger<PatientController> logger, IAuthenticationService authenticationService)
     {
         _logger = logger;
         _authenticationService = authenticationService;
     }
 
+    /// <summary>
+    /// Gets the list of patients associated with the authenticated user.
+    /// </summary>
+    /// <returns>A collection of <see cref="PatientModel"/>.</returns>
     [HttpGet(Name = "GetPatient")]
     public IEnumerable<PatientModel> Get()
     {
+        // Get the ID of the currently authenticated user
         var userId = _authenticationService.GetCurrentAuthenticatedUserId();
         _logger.LogInformation($"User ID: {userId}");
 

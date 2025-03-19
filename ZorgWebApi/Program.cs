@@ -7,11 +7,7 @@ using Dapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 // Add services to the container.
-
-
-
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -66,7 +62,7 @@ app.MapControllers().RequireAuthorization();
 app.UseSwagger();
 app.UseSwaggerUI(); 
 app.UseHttpsRedirection();
-app.MapGet("/", () => $"The API is up. Connection string found: {(sqlConnectionStringFound ? "Yes" : "No")}");
+app.MapGet("/", () => $"The ZorgAppWebAPI is up. Connection string found: {(sqlConnectionStringFound ? "Yes" : "No")}");
 app.UseAuthorization();
 
 app.UseAuthorization();
