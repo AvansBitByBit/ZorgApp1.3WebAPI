@@ -3,67 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\services\\characterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\services\\characterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\repository\\patient\\characterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\repository\\patient\\characterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\repository\\patient\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\repository\\patient\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\services\\aspnetidentityauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\services\\aspnetidentityauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\icharacterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\icharacterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\controllers\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\controllers\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\icharacterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\icharacterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\models\\patientmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\models\\patientmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yazan\\AppData\\Roaming\\Microsoft\\UserSecrets\\aea8e482-dd1e-4b80-977b-798857c8d8ae\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\controllers\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\controllers\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\models\\zorgmomentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\models\\zorgmomentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\icharacterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\icharacterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\icharacterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\icharacterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\models\\artsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\models\\artsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\models\\charactermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\models\\charactermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\models\\oudervoogdmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\models\\oudervoogdmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\models\\patientmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\models\\patientmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\models\\trajectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,6 +59,33 @@
       "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\models\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\models\\zorgmomentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\models\\zorgmomentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\repository\\patient\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\repository\\patient\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\services\\characterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\services\\characterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\repository\\patient\\characterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\repository\\patient\\characterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\services\\aspnetidentityauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\services\\aspnetidentityauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yazan\\AppData\\Roaming\\Microsoft\\UserSecrets\\aea8e482-dd1e-4b80-977b-798857c8d8ae\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\yazan\\desktop\\ict1.3-graphics-secure-communication\\zorgapp1.3webapi\\zorgwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -89,21 +97,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 158,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Program.cs",
               "RelativeDocumentMoniker": "ZorgWebApi\\Program.cs",
               "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Program.cs",
               "RelativeToolTip": "ZorgWebApi\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T15:47:03.221Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
@@ -114,20 +126,68 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "ZorgWebApi\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T20:11:43.817Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CharacterService.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\CharacterService.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Services\\CharacterService.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\CharacterService.cs",
-              "RelativeToolTip": "ZorgWebApi\\Services\\CharacterService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "ZorgWebApi\\Controllers\\PatientController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T21:58:42.736Z",
+              "WhenOpened": "2025-03-19T15:49:56.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CharacterController.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\CharacterController.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\CharacterController.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\CharacterController.cs",
+              "RelativeToolTip": "ZorgWebApi\\Controllers\\CharacterController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T21:54:22.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
+              "RelativeToolTip": "ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T15:54:41.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICharacterRepository.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\ICharacterRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\ICharacterRepository.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\ICharacterRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Interfaces\\ICharacterRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T21:54:46.656Z",
               "EditorCaption": ""
             },
             {
@@ -138,53 +198,131 @@
               "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\ICharacterService.cs",
               "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\ICharacterService.cs",
               "RelativeToolTip": "ZorgWebApi\\Interfaces\\ICharacterService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T22:00:00.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CharacterRepository.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\Patient\\CharacterRepository.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Repository\\Patient\\CharacterRepository.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\Patient\\CharacterRepository.cs",
-              "RelativeToolTip": "ZorgWebApi\\Repository\\Patient\\CharacterRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T21:55:19.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CharacterController.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\CharacterController.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\CharacterController.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\CharacterController.cs",
-              "RelativeToolTip": "ZorgWebApi\\Controllers\\CharacterController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\IPatientRepository.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IPatientRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Interfaces\\IPatientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T21:54:22.822Z",
+              "WhenOpened": "2025-03-19T15:31:25.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AspNetIdentityAuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
-              "RelativeToolTip": "ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ArtsModel.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\ArtsModel.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\ArtsModel.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\ArtsModel.cs",
+              "RelativeToolTip": "ZorgWebApi\\Models\\ArtsModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T15:53:25.516Z",
+              "WhenOpened": "2025-03-19T22:36:48.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "CharacterModel.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\CharacterModel.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\CharacterModel.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\CharacterModel.cs",
+              "RelativeToolTip": "ZorgWebApi\\Models\\CharacterModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T22:38:11.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PatientModel.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\PatientModel.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\PatientModel.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\PatientModel.cs",
+              "RelativeToolTip": "ZorgWebApi\\Models\\PatientModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:50:38.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TrajectModel.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\TrajectModel.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\TrajectModel.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\TrajectModel.cs",
+              "RelativeToolTip": "ZorgWebApi\\Models\\TrajectModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T18:00:30.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TrajectZorgMomentModel.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\TrajectZorgMomentModel.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\TrajectZorgMomentModel.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\TrajectZorgMomentModel.cs",
+              "RelativeToolTip": "ZorgWebApi\\Models\\TrajectZorgMomentModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T20:10:28.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OuderVoogdModel.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\OuderVoogdModel.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\OuderVoogdModel.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\OuderVoogdModel.cs",
+              "RelativeToolTip": "ZorgWebApi\\Models\\OuderVoogdModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:17:19.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\WeatherForecast.cs",
+              "RelativeToolTip": "ZorgWebApi\\Models\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T20:10:35.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ZorgMomentModel.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\ZorgMomentModel.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\ZorgMomentModel.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\ZorgMomentModel.cs",
+              "RelativeToolTip": "ZorgWebApi\\Models\\ZorgMomentModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T20:10:44.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "PatientRepository.cs",
               "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\Patient\\PatientRepository.cs",
               "RelativeDocumentMoniker": "ZorgWebApi\\Repository\\Patient\\PatientRepository.cs",
@@ -197,32 +335,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICharacterRepository.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\ICharacterRepository.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\ICharacterRepository.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\ICharacterRepository.cs",
-              "RelativeToolTip": "ZorgWebApi\\Interfaces\\ICharacterRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "CharacterService.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\CharacterService.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Services\\CharacterService.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\CharacterService.cs",
+              "RelativeToolTip": "ZorgWebApi\\Services\\CharacterService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T21:54:46.656Z",
+              "WhenOpened": "2025-03-19T21:58:42.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PatientController.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\PatientController.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\PatientController.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\PatientController.cs",
-              "RelativeToolTip": "ZorgWebApi\\Controllers\\PatientController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBwAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "CharacterRepository.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\Patient\\CharacterRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Repository\\Patient\\CharacterRepository.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\Patient\\CharacterRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Repository\\Patient\\CharacterRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAIwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:49:56.503Z"
+              "WhenOpened": "2025-03-19T21:55:19.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
+              "Title": "AspNetIdentityAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
+              "RelativeToolTip": "ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T15:53:25.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\yazan\\AppData\\Roaming\\Microsoft\\UserSecrets\\aea8e482-dd1e-4b80-977b-798857c8d8ae\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\aea8e482-dd1e-4b80-977b-798857c8d8ae\\secrets.json",
@@ -234,115 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PatientModel.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\PatientModel.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\PatientModel.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\PatientModel.cs",
-              "RelativeToolTip": "ZorgWebApi\\Models\\PatientModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:50:38.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IPatientRepository.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IPatientRepository.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\IPatientRepository.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IPatientRepository.cs",
-              "RelativeToolTip": "ZorgWebApi\\Interfaces\\IPatientRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:31:25.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IAuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
-              "RelativeToolTip": "ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T15:54:41.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ZorgMomentModel.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\ZorgMomentModel.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\ZorgMomentModel.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\ZorgMomentModel.cs",
-              "RelativeToolTip": "ZorgWebApi\\Models\\ZorgMomentModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T20:10:44.501Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "OuderVoogdModel.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\OuderVoogdModel.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\OuderVoogdModel.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\OuderVoogdModel.cs",
-              "RelativeToolTip": "ZorgWebApi\\Models\\OuderVoogdModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:17:19.433Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "ZorgWebApi\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T20:11:43.817Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TrajectModel.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\TrajectModel.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\TrajectModel.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\TrajectModel.cs",
-              "RelativeToolTip": "ZorgWebApi\\Models\\TrajectModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T18:00:30.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TrajectZorgMomentModel.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\TrajectZorgMomentModel.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\TrajectZorgMomentModel.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\TrajectZorgMomentModel.cs",
-              "RelativeToolTip": "ZorgWebApi\\Models\\TrajectZorgMomentModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T20:10:28.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\WeatherForecast.cs",
-              "RelativeToolTip": "ZorgWebApi\\Models\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T20:10:35.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\yazan\\Desktop\\ICT1.3-Graphics-Secure-Communication\\ZorgApp1.3WebAPI\\ZorgWebApi\\appsettings.json",
               "RelativeDocumentMoniker": "ZorgWebApi\\appsettings.json",

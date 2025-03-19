@@ -15,12 +15,19 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
+// Configure OpenAPI/Swagger
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
+
+// Register application services
 builder.Services.AddTransient<ICharacterRepository, CharacterRepository>();
 builder.Services.AddTransient<ICharacterService, CharacterService>();
+
+// Configure authorization
 builder.Services.AddAuthorization();
+
+// Configure Identity with Dapper stores
 builder.Services
     .AddIdentityApiEndpoints<IdentityUser>(options =>
     {
@@ -34,18 +41,25 @@ builder.Services
     .AddRoles<IdentityRole>()
     .AddDapperStores(options =>
     {
-        options.ConnectionString = builder.Configuration 
-        .GetConnectionString("ConnectionString"); // voor een localhost voeg in usersecret de connectionstring toe zie teams voor connectionstring
+        options.ConnectionString = builder.Configuration
+        .GetConnectionString("ConnectionString"); // Add connection string in user secrets for localhost
     });
+
+// Get the SQL connection string from configuration
 var sqlConnectionString = builder.Configuration.GetValue<string>("ConnectionString");
 var sqlConnectionStringFound = !string.IsNullOrWhiteSpace(sqlConnectionString);
 
-builder.Services.AddHttpContextAccessor(); 
-builder.Services.AddTransient<IAuthenticationService, AspNetIdentityAuthenticationService>();
+// Register IDbConnection
 builder.Services.AddTransient<IDbConnection>(sp => new SqlConnection(sqlConnectionString));
 
+// Register other services
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddTransient<IAuthenticationService, AspNetIdentityAuthenticationService>();
+
 var app = builder.Build();
-app.MapPost("/account/logout", 
+
+// Endpoint for logging out
+app.MapPost("/account/logout",
     async (SignInManager<IdentityUser> SignInManager,
     [FromBody] object empty) =>
     {
@@ -64,17 +78,26 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-
+// Map identity and controller endpoints
 app.MapGroup("/account").MapIdentityApi<IdentityUser>();
 app.MapControllers().RequireAuthorization();
+
+// Configure Swagger
 app.UseSwagger();
-app.UseSwaggerUI(); 
+app.UseSwaggerUI();
+
+// Configure HTTPS redirection
 app.UseHttpsRedirection();
+
+// Health check endpoint
 app.MapGet("/", () => $"The ZorgAppWebAPI is up. Connection string found: {(sqlConnectionStringFound ? "Yes" : "No")}");
+
+// Configure authorization
 app.UseAuthorization();
 
-app.UseAuthorization();
-
+// Map controllers
 app.MapControllers();
 
+// Run the application
 app.Run();
+
