@@ -2,8 +2,13 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ZorgWebApi.Models;
 
-public interface ICharacterService
+namespace ZorgWebApi.Interfaces
 {
-    Task CreateCharacterAsync(Character character);
-    Task<IEnumerable<Character>> GetCharactersAsync();
+
+    public interface ICharacterRepository
+        {
+          Task CreateCharacterAsync(Character character);
+           Task<IEnumerable<Character>> GetCharactersByUserIdAsync(string userId);
+        }
+    
 }
