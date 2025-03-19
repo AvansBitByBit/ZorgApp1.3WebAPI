@@ -7,6 +7,7 @@ using Dapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
 
 
@@ -31,8 +32,11 @@ builder.Services
     .AddDapperStores(options =>
     {
         options.ConnectionString = builder.Configuration 
-        .GetConnectionString("ConnectionString"); // voor een localhost voeg in usersecret de connectionstring toe
+        .GetConnectionString("ConnectionString"); // voor een localhost voeg in usersecret de connectionstring toe zie teams voor connectionstring
     });
+var sqlConnectionString = builder.Configuration.GetValue<string>("ConnectionString");
+var sqlConnectionStringFound = !string.IsNullOrWhiteSpace(sqlConnectionString);
+
 builder.Services.AddHttpContextAccessor(); 
 builder.Services.AddTransient<IAuthenticationService, AspNetIdentityAuthenticationService>();
 
@@ -62,6 +66,7 @@ app.MapControllers().RequireAuthorization();
 app.UseSwagger();
 app.UseSwaggerUI(); 
 app.UseHttpsRedirection();
+app.MapGet("/", () => $"The API is up. Connection string found: {(sqlConnectionStringFound ? "Yes" : "No")}");
 app.UseAuthorization();
 
 app.UseAuthorization();
