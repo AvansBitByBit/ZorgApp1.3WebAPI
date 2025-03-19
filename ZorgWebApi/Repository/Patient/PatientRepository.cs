@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using Dapper;
+using ZorgWebApi.Interfaces;
 using ZorgWebApi.Models;
-using ZorgWebApi.Repository.Patient;
 
 namespace ZorgWebApi.Repository.Patient
 {

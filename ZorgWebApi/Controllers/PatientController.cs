@@ -38,6 +38,7 @@ public class PatientController : ControllerBase
             ID = index,
             Voornaam = "Voornaam",
             Achternaam = "Achternaam",
+            GeboorteDatum = DateOnly.FromDateTime(DateTime.Now.AddYears(-index * 5)), // Simulated birth date
             OuderVoogd_ID = index,
             TrajectID = index,
             ArtsID = index,
