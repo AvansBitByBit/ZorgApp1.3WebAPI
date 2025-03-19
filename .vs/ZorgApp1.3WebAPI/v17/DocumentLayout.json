@@ -11,16 +11,20 @@
       "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\models\\patientmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\repository\\patient\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\repository\\patient\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\repository\\patient\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\repository\\patient\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\models\\oudervoogdmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +54,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Program.cs",
               "RelativeDocumentMoniker": "ZorgWebApi\\Program.cs",
@@ -59,7 +63,58 @@
               "ViewState": "AgIAABsAAAAAAAAAAADwv0AAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T15:47:03.221Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientModel.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\PatientModel.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\PatientModel.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\PatientModel.cs",
+              "RelativeToolTip": "ZorgWebApi\\Models\\PatientModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:50:38.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "ZorgWebApi\\Controllers\\PatientController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:49:56.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\Patient\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Repository\\Patient\\PatientRepository.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\Patient\\PatientRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Repository\\Patient\\PatientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:31:36.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\Patient\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Repository\\Patient\\IPatientRepository.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\Patient\\IPatientRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Repository\\Patient\\IPatientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:31:25.27Z",
               "EditorCaption": ""
             },
             {
@@ -68,46 +123,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PatientModel.cs",
-              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\PatientModel.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\PatientModel.cs",
-              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\PatientModel.cs*",
-              "RelativeToolTip": "ZorgWebApi\\Models\\PatientModel.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:17:16.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "ZorgWebApi\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAkAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T18:24:24.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "IAuthenticationService.cs",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
               "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
               "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
               "RelativeToolTip": "ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T15:54:41.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "OuderVoogdModel.cs",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\OuderVoogdModel.cs",
               "RelativeDocumentMoniker": "ZorgWebApi\\Models\\OuderVoogdModel.cs",
@@ -115,12 +144,11 @@
               "RelativeToolTip": "ZorgWebApi\\Models\\OuderVoogdModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:17:19.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T11:17:19.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\appsettings.json",
               "RelativeDocumentMoniker": "ZorgWebApi\\appsettings.json",
@@ -132,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "TrajectModel.cs",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\TrajectModel.cs",
               "RelativeDocumentMoniker": "ZorgWebApi\\Models\\TrajectModel.cs",
@@ -140,12 +168,11 @@
               "RelativeToolTip": "ZorgWebApi\\Models\\TrajectModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T18:00:30.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T18:00:30.388Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AspNetIdentityAuthenticationService.cs",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
               "RelativeDocumentMoniker": "ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
@@ -154,29 +181,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T15:53:25.516Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 242,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PatientController.cs",
-              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\PatientController.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\PatientController.cs",
-              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\PatientController.cs",
-              "RelativeToolTip": "ZorgWebApi\\Controllers\\PatientController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA0wCgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:19:19.08Z",
-              "EditorCaption": ""
             }
           ]
         }

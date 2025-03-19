@@ -12,6 +12,7 @@
         public int OuderVoogd_ID { get; set; }
         public int TrajectID { get; set; }
         public int? ArtsID { get; set; }
+        public string? UserId { get; set; }
     }
 
    
