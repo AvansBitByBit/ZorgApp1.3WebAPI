@@ -13,6 +13,8 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
+builder.Services.AddTransient<ICharacterRepository, CharacterRepository>();
+builder.Services.AddTransient<ICharacterService, CharacterService>();
 builder.Services.AddAuthorization();
 builder.Services
     .AddIdentityApiEndpoints<IdentityUser>(options =>

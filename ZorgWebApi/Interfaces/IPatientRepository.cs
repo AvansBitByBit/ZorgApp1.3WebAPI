@@ -1,6 +1,6 @@
 ﻿using ZorgWebApi.Models;
 
-namespace ZorgWebApi.Repository.Patient
+namespace ZorgWebApi.Interfaces
 {
     /// <summary>
     /// Interface for managing patient data.
@@ -32,4 +32,3 @@ namespace ZorgWebApi.Repository.Patient
         Task UpdatePatient(PatientModel patient);
     }
 }
-
