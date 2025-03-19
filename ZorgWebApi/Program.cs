@@ -44,7 +44,7 @@ var app = builder.Build();
 app.MapPost("/account/logout", 
     async (SignInManager<IdentityUser> SignInManager,
     [FromBody] object empty) =>
-    {s
+    {
         if (empty != null)
         {
             await SignInManager.SignOutAsync();
