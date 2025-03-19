@@ -96,7 +96,7 @@ ZorgApp1.3WebAPI is a web API designed to support a game for patient kids who ha
 4. **API Documentation**:
    - Access Swagger for API documentation at:
      ```
-     https://localhost:5001/swagger
+     https://localhost:xxxx/swagger
      ```
 
 ## Conclusion
