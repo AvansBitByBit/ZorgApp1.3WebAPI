@@ -1,5 +1,6 @@
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Microsoft.OpenApi.Models;
+using Microsoft.Data.SqlClient;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Avans.Identity.Dapper;
@@ -7,6 +8,7 @@ using Dapper;
 using ZorgWebApi.Interfaces;
 using ZorgWebApi.Repository;
 using ZorgWebApi.Services;
+using System.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,6 +42,7 @@ var sqlConnectionStringFound = !string.IsNullOrWhiteSpace(sqlConnectionString);
 
 builder.Services.AddHttpContextAccessor(); 
 builder.Services.AddTransient<IAuthenticationService, AspNetIdentityAuthenticationService>();
+builder.Services.AddTransient<IDbConnection>(sp => new SqlConnection(sqlConnectionString));
 
 var app = builder.Build();
 app.MapPost("/account/logout", 
