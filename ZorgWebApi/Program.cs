@@ -9,7 +9,6 @@ using ZorgWebApi.Interfaces;
 using ZorgWebApi.Repository;
 using ZorgWebApi.Services;
 using System.Data;
-using ZorgWebApi.Repository.Patient;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +24,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<ICharacterRepository, CharacterRepository>();
 builder.Services.AddTransient<ICharacterService, CharacterService>();
 builder.Services.AddScoped<IPatientRepository, PatientRepository>();
+builder.Services.AddScoped<ITipRepository, TipRepository>();
 
 // Configure authorization
 builder.Services.AddAuthorization();

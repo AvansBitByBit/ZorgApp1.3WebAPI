@@ -3,7 +3,7 @@ using Dapper;
 using ZorgWebApi.Interfaces;
 using ZorgWebApi.Models;
 
-namespace ZorgWebApi.Repository.Patient
+namespace ZorgWebApi.Repository
 {
     /// <summary>
     /// Repository class for managing patient data.
