@@ -5,7 +5,7 @@ using ZorgWebApi.Models;
 namespace ZorgWebApi.Controllers;
 
 [ApiController]
-[Route("Patient")]
+[Route("[controller]")]
 public class PatientController : ControllerBase
 {
     private readonly ILogger<PatientController> _logger;
@@ -17,6 +17,7 @@ public class PatientController : ControllerBase
     /// </summary>
     /// <param name="logger">The logger instance.</param>
     /// <param name="authenticationService">The authentication service instance.</param>
+    /// <param name="repository">The patient repository instance.</param>
     public PatientController(ILogger<PatientController> logger, IAuthenticationService authenticationService, IPatientRepository repository)
     {
         _repository = repository;
@@ -29,23 +30,101 @@ public class PatientController : ControllerBase
     /// </summary>
     /// <returns>A collection of <see cref="PatientModel"/>.</returns>
     [HttpGet(Name = "GetPatient")]
-    public async Task <ActionResult<IEnumerable<PatientModel>>> Get()
+    public async Task<ActionResult<IEnumerable<PatientModel>>> Get()
     {
         try
         {
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
-            if(userId == null)
+            if (userId == null)
             {
                 return Unauthorized();
             }
-            var Patients = await _repository.GetPatients(userId);
-            return Ok(Patients);
+            var patients = await _repository.GetPatients(userId);
+            return Ok(patients);
         }
         catch (Exception ex)
         {
-            _logger.LogError("Fout met ophalen van patienten zie cmd");
+            _logger.LogError($"Error fetching patients: {ex.Message}");
             return StatusCode(500, "Internal Server Error");
         }
     }
 
+    /// <summary>
+    /// Creates a new patient record.
+    /// </summary>
+    /// <param name="patient">The patient model containing the data to be inserted.</param>
+    [HttpPost(Name = "CreatePatient")]
+    public async Task<ActionResult> Create([FromBody] PatientModel patient)
+    {
+        try
+        {
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+            patient.UserId = userId;
+            await _repository.CreatePatient(patient);
+            return CreatedAtAction(nameof(Get), new { id = patient.ID }, patient);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Error creating patient: {ex.Message}");
+            return StatusCode(500, "Internal Server Error");
+        }
+    }
+
+    /// <summary>
+    /// Updates an existing patient record.
+    /// </summary>
+    /// <param name="id">The ID of the patient to be updated.</param>
+    /// <param name="patient">The patient model containing the updated data.</param>
+    [HttpPut("{id}", Name = "UpdatePatient")]
+    public async Task<IActionResult> Update(int id, [FromBody] PatientModel patient)
+    {
+        try
+        {
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+            if (id != patient.ID || userId != patient.UserId)
+            {
+                return BadRequest("The ID or UserId did not match.");
+            }
+            await _repository.UpdatePatient(patient);
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Error updating patient: {ex.Message}");
+            return StatusCode(500, "Internal Server Error");
+        }
+    }
+
+    /// <summary>
+    /// Deletes an existing patient record.
+    /// </summary>
+    /// <param name="id">The ID of the patient to be deleted.</param>
+    [HttpDelete("{id}", Name = "DeletePatient")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        try
+        {
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+            var patient = new PatientModel { ID = id, UserId = userId };
+            await _repository.DeletePatient(patient);
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Error deleting patient: {ex.Message}");
+            return StatusCode(500, "Internal Server Error");
+        }
+    }
 }
