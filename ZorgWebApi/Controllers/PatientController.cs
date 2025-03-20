@@ -1,13 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ZorgWebApi.Interfaces;
 using ZorgWebApi.Models;
 
 namespace ZorgWebApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("Patient")]
 public class PatientController : ControllerBase
 {
     private readonly ILogger<PatientController> _logger;
+    private readonly IPatientRepository _repository;
     private readonly IAuthenticationService _authenticationService;
 
     /// <summary>
@@ -15,8 +17,9 @@ public class PatientController : ControllerBase
     /// </summary>
     /// <param name="logger">The logger instance.</param>
     /// <param name="authenticationService">The authentication service instance.</param>
-    public PatientController(ILogger<PatientController> logger, IAuthenticationService authenticationService)
+    public PatientController(ILogger<PatientController> logger, IAuthenticationService authenticationService, IPatientRepository repository)
     {
+        _repository = repository;
         _logger = logger;
         _authenticationService = authenticationService;
     }
@@ -26,28 +29,23 @@ public class PatientController : ControllerBase
     /// </summary>
     /// <returns>A collection of <see cref="PatientModel"/>.</returns>
     [HttpGet(Name = "GetPatient")]
-    public IEnumerable<PatientModel> Get()
+    public async Task <ActionResult<IEnumerable<PatientModel>>> Get()
     {
-        // Get the ID of the currently authenticated user
-        var userId = _authenticationService.GetCurrentAuthenticatedUserId();
-        _logger.LogInformation($"User ID: {userId}");
-
-        // Simulate fetching patient records from a data source
-        var allPatients = Enumerable.Range(1, 5).Select(index => new PatientModel
+        try
         {
-            ID = index,
-            Voornaam = "Voornaam",
-            Achternaam = "Achternaam",
-            GeboorteDatum = DateOnly.FromDateTime(DateTime.Now.AddYears(-index * 5)), // Simulated birth date
-            OuderVoogd_ID = index,
-            TrajectID = index,
-            ArtsID = index,
-            UserId = userId // Assign the user ID to each patient record
-        }).ToArray();
-
-        // Filter patients by the authenticated user's ID
-        var userPatients = allPatients.Where(p => p.UserId == userId);
-
-        return userPatients;
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
+            if(userId == null)
+            {
+                return Unauthorized();
+            }
+            var Patients = await _repository.GetPatients(userId);
+            return Ok(Patients);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Fout met ophalen van patienten zie cmd");
+            return StatusCode(500, "Internal Server Error");
+        }
     }
+
 }

@@ -22,13 +22,14 @@ namespace ZorgWebApi.Repository.Patient
         }
 
         /// <summary>
-        /// Retrieves all patients from the database.
+        /// Retrieves all patients for a specific user from the database.
         /// </summary>
+        /// <param name="userId">The user ID to filter patients by.</param>
         /// <returns>A collection of <see cref="PatientModel"/>.</returns>
-        public async Task<IEnumerable<PatientModel>> GetPatients()
+        public async Task<IEnumerable<PatientModel>> GetPatients(string userId)
         {
-            var query = "SELECT * FROM Patient";
-            return await _dbConnection.QueryAsync<PatientModel>(query);
+            var query = "SELECT * FROM Patient WHERE UserId = @UserId";
+            return await _dbConnection.QueryAsync<PatientModel>(query, new { UserId = userId });
         }
 
         /// <summary>
@@ -37,17 +38,17 @@ namespace ZorgWebApi.Repository.Patient
         /// <param name="patient">The patient model containing the data to be inserted.</param>
         public async Task CreatePatient(PatientModel patient)
         {
-            var query = "INSERT INTO Patient (Voornaam, Achternaam, OuderVoogd_ID, TrajectID, ArtsID) VALUES (@Voornaam, @Achternaam, @OuderVoogd_ID, @TrajectID, @ArtsID)";
+            var query = "INSERT INTO Patient (Voornaam, Achternaam, OuderVoogd_ID, TrajectID, ArtsID, UserId) VALUES (@Voornaam, @Achternaam, @OuderVoogd_ID, @TrajectID, @ArtsID, @UserId)";
             await _dbConnection.ExecuteAsync(query, patient);
         }
 
         /// <summary>
         /// Deletes an existing patient record from the database.
         /// </summary>
-        /// <param name="patient">The patient model containing the ID of the patient to be deleted.</param>
+        /// <param name="patient">The patient model containing the ID and UserId of the patient to be deleted.</param>
         public async Task DeletePatient(PatientModel patient)
         {
-            var query = "DELETE FROM Patient WHERE ID = @ID";
+            var query = "DELETE FROM Patient WHERE ID = @ID AND UserId = @UserId";
             await _dbConnection.ExecuteAsync(query, patient);
         }
 
@@ -57,7 +58,7 @@ namespace ZorgWebApi.Repository.Patient
         /// <param name="patient">The patient model containing the updated data.</param>
         public async Task UpdatePatient(PatientModel patient)
         {
-            var query = "UPDATE Patient SET Voornaam = @Voornaam, Achternaam = @Achternaam, OuderVoogd_ID = @OuderVoogd_ID, TrajectID = @TrajectID, ArtsID = @ArtsID WHERE ID = @ID";
+            var query = "UPDATE Patient SET Voornaam = @Voornaam, Achternaam = @Achternaam, OuderVoogd_ID = @OuderVoogd_ID, TrajectID = @TrajectID, ArtsID = @ArtsID WHERE ID = @ID AND UserId = @UserId";
             await _dbConnection.ExecuteAsync(query, patient);
         }
     }
