@@ -29,7 +29,7 @@ namespace ZorgWebApi.Repository
         /// <param name="character">The character model containing the data to be inserted.</param>
         public async Task CreateCharacterAsync(Character character)
         {
-            var sql = "INSERT INTO Characters (Name, HairColor, SkinColor, EyeColor, Gender, UserId) VALUES (@Name, @HairColor, @SkinColor, @EyeColor, @Gender, @UserId)";
+            var sql = "INSERT INTO Characters (HairColor, SkinColor, EyeColor, Gender, SpacesuitColor, Hat, UserId) VALUES (@HairColor, @SkinColor, @EyeColor, @Gender, @SpacesuitColor, @Hat, @UserId)";
             await _dbConnection.ExecuteAsync(sql, character);
         }
 
@@ -45,4 +45,3 @@ namespace ZorgWebApi.Repository
         }
     }
 }
-
