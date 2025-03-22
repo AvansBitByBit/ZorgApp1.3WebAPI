@@ -13,6 +13,8 @@ using System.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container. //
+var sqlConnectionString = builder.Configuration.GetValue<string>("connectionstring");
+var sqlConnectionStringFound = !string.IsNullOrWhiteSpace(sqlConnectionString);
 
 builder.Services.AddControllers();
 
@@ -48,8 +50,6 @@ builder.Services
     });
 
 // Get the SQL connection string from configuration
-var sqlConnectionString = builder.Configuration.GetValue<string>("connectionstring");
-var sqlConnectionStringFound = !string.IsNullOrWhiteSpace(sqlConnectionString);
 
 // Register IDbConnection
 builder.Services.AddTransient<IDbConnection>(sp => new SqlConnection(sqlConnectionString));
