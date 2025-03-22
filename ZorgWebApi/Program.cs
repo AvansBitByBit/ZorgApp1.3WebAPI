@@ -46,7 +46,7 @@ builder.Services
     .AddDapperStores(options =>
     {
         options.ConnectionString = builder.Configuration
-        .GetConnectionString("connectionstring"); // Add connection string in user secrets for localhost
+        .GetValue<string>("connectionstring"); // Add connection string in user secrets for localhost
     });
 
 // Get the SQL connection string from configuration
