@@ -12,7 +12,7 @@ using System.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container. //
 
 builder.Services.AddControllers();
 
