@@ -44,11 +44,11 @@ builder.Services
     .AddDapperStores(options =>
     {
         options.ConnectionString = builder.Configuration
-        .GetConnectionString("ConnectionString"); // Add connection string in user secrets for localhost
+        .GetConnectionString("connectionstring"); // Add connection string in user secrets for localhost
     });
 
 // Get the SQL connection string from configuration
-var sqlConnectionString = builder.Configuration.GetValue<string>("ConnectionString");
+var sqlConnectionString = builder.Configuration.GetValue<string>("connectionstring");
 var sqlConnectionStringFound = !string.IsNullOrWhiteSpace(sqlConnectionString);
 
 // Register IDbConnection
