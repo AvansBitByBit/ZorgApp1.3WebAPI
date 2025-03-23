@@ -28,7 +28,7 @@ namespace ZorgWebApi.Repository
         /// <returns>A collection of <see cref="PatientModel"/>.</returns>
         public async Task<IEnumerable<PatientModel>> GetPatients(string userId)
         {
-            var query = "SELECT * FROM Patient WHERE UserId = @UserId";
+            var query = "SELECT * FROM Patients WHERE UserId = @UserId";
             return await _dbConnection.QueryAsync<PatientModel>(query, new { UserId = userId });
         }
 
@@ -38,7 +38,7 @@ namespace ZorgWebApi.Repository
         /// <param name="patient">The patient model containing the data to be inserted.</param>
         public async Task CreatePatient(PatientModel patient)
         {
-            var query = "INSERT INTO Patient (Voornaam, Achternaam, OuderVoogd_ID, TrajectID, ArtsID, UserId) VALUES (@Voornaam, @Achternaam, @OuderVoogd_ID, @TrajectID, @ArtsID, @UserId)";
+            var query = "INSERT INTO Patients (Voornaam, Achternaam, OuderVoogd_ID, TrajectID, ArtsID, UserId) VALUES (@Voornaam, @Achternaam, @OuderVoogd_ID, @TrajectID, @ArtsID, @UserId)";
             await _dbConnection.ExecuteAsync(query, patient);
         }
 
@@ -48,7 +48,7 @@ namespace ZorgWebApi.Repository
         /// <param name="patient">The patient model containing the ID and UserId of the patient to be deleted.</param>
         public async Task DeletePatient(PatientModel patient)
         {
-            var query = "DELETE FROM Patient WHERE ID = @ID AND UserId = @UserId";
+            var query = "DELETE FROM Patients WHERE ID = @ID AND UserId = @UserId";
             await _dbConnection.ExecuteAsync(query, patient);
         }
 
@@ -58,7 +58,7 @@ namespace ZorgWebApi.Repository
         /// <param name="patient">The patient model containing the updated data.</param>
         public async Task UpdatePatient(PatientModel patient)
         {
-            var query = "UPDATE Patient SET Voornaam = @Voornaam, Achternaam = @Achternaam, OuderVoogd_ID = @OuderVoogd_ID, TrajectID = @TrajectID, ArtsID = @ArtsID WHERE ID = @ID AND UserId = @UserId";
+            var query = "UPDATE Patients SET Voornaam = @Voornaam, Achternaam = @Achternaam, OuderVoogd_ID = @OuderVoogd_ID, TrajectID = @TrajectID, ArtsID = @ArtsID WHERE ID = @ID AND UserId = @UserId";
             await _dbConnection.ExecuteAsync(query, patient);
         }
     }
