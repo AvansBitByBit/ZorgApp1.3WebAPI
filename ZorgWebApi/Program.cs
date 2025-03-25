@@ -31,6 +31,7 @@ builder.Services.AddTransient<ICharacterService, CharacterService>();
 builder.Services.AddScoped<IPatientRepository, PatientRepository>();
 builder.Services.AddScoped<ITipRepository, TipRepository>();
 builder.Services.AddScoped<IDagboekRepository, DagboekRepository>();
+builder.Services.AddScoped<IAfspraakRepository, AfspraakRepository>();s
 
 // Configure authorization
 builder.Services.AddAuthorization();
