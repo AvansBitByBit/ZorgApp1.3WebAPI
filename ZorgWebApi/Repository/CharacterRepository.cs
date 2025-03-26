@@ -27,10 +27,20 @@ namespace ZorgWebApi.Repository
         /// Creates a new character record in the database.
         /// </summary>
         /// <param name="character">The character model containing the data to be inserted.</param>
-        public async Task CreateCharacterAsync(Character character)
+        /// <param name="userId">The user ID associated with the character.</param>
+        public async Task CreateCharacterAsync(Character character, string userId)
         {
             var sql = "INSERT INTO Characters (HairColor, SkinColor, EyeColor, Gender, SpacesuitColor, Hat, UserId) VALUES (@HairColor, @SkinColor, @EyeColor, @Gender, @SpacesuitColor, @Hat, @UserId)";
-            await _dbConnection.ExecuteAsync(sql, character);
+            await _dbConnection.ExecuteAsync(sql, new
+            {
+                character.HairColor,
+                character.SkinColor,
+                character.EyeColor,
+                character.Gender,
+                character.SpacesuitColor,
+                character.Hat,
+                UserId = userId
+            });
         }
 
         /// <summary>

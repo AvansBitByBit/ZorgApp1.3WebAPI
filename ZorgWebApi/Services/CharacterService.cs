@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using ZorgWebApi.Models;
-using ZorgWebApi.Repository;
 using ZorgWebApi.Interfaces;
 
 namespace ZorgWebApi.Services
@@ -31,8 +30,9 @@ namespace ZorgWebApi.Services
         /// <param name="character">The character model containing the data to be inserted.</param>
         public async Task CreateCharacterAsync(Character character)
         {
-            character.UserId = _authenticationService.GetCurrentAuthenticatedUserId();
-            await _characterRepository.CreateCharacterAsync(character);
+            // Get the UserId of the currently authenticated user
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
+            await _characterRepository.CreateCharacterAsync(character, userId);
         }
 
         /// <summary>
@@ -41,10 +41,9 @@ namespace ZorgWebApi.Services
         /// <returns>A collection of <see cref="Character"/>.</returns>
         public async Task<IEnumerable<Character>> GetCharactersAsync()
         {
+            // Get the ID of the currently authenticated user
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
             return await _characterRepository.GetCharactersByUserIdAsync(userId);
         }
     }
 }
-
-
