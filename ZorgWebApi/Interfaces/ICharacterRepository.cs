@@ -14,7 +14,7 @@ namespace ZorgWebApi.Interfaces
         /// </summary>
         /// <param name="character">The character model containing the data to be inserted.</param>
         /// <returns>A task representing the asynchronous operation.</returns>
-        Task CreateCharacterAsync(Character character);
+        Task CreateCharacterAsync(Character character, string userId);
 
         /// <summary>
         /// Retrieves all characters associated with a specific user ID asynchronously.
