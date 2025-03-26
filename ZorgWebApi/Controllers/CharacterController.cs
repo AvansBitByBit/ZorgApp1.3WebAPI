@@ -5,18 +5,38 @@ using ZorgWebApi.Models;
 using ZorgWebApi.Interfaces;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("Charactercreator")]
 public class CharacterController : ControllerBase
 {
     private readonly ICharacterService _characterService;
+    private readonly IAuthenticationService _authenticationService;
+
 
     /// <summary>
     /// Initializes a new instance of the <see cref="CharacterController"/> class.
     /// </summary>
     /// <param name="characterService">The character service instance.</param>
-    public CharacterController(ICharacterService characterService)
+    public CharacterController(ICharacterService characterService, IAuthenticationService authenticationService)
     {
         _characterService = characterService;
+        _authenticationService = authenticationService;
+    }
+
+
+    /// <summary>
+    /// Gets the list of characters.
+    /// </summary>
+    /// <returns>A collection of <see cref="Character"/>.</returns>
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Character>>> GetCharacters()
+    {
+        var userId = _authenticationService.GetCurrentAuthenticatedUserId();
+        if (userId == null)
+        {
+            return Unauthorized();
+        }
+        var characters = await _characterService.GetCharactersAsync();
+        return Ok(characters);
     }
 
     /// <summary>
@@ -27,18 +47,14 @@ public class CharacterController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateCharacter([FromBody] Character character)
     {
+        var userId = _authenticationService.GetCurrentAuthenticatedUserId();
+        if (userId == null)
+        {
+            return Unauthorized();
+        }
+        character.UserId = userId;
         await _characterService.CreateCharacterAsync(character);
         return Ok(character);
     }
 
-    /// <summary>
-    /// Gets the list of characters.
-    /// </summary>
-    /// <returns>A collection of <see cref="Character"/>.</returns>
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<Character>>> GetCharacters()
-    {
-        var characters = await _characterService.GetCharactersAsync();
-        return Ok(characters);
-    }
 }

@@ -152,7 +152,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 158,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -165,60 +165,7 @@
               "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T15:47:03.221Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AfpraakController.cs",
-              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\AfpraakController.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\AfpraakController.cs",
-              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\AfpraakController.cs",
-              "RelativeToolTip": "ZorgWebApi\\Controllers\\AfpraakController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T14:47:38.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AfspraakRepository.cs",
-              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\AfspraakRepository.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Repository\\AfspraakRepository.cs",
-              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\AfspraakRepository.cs",
-              "RelativeToolTip": "ZorgWebApi\\Repository\\AfspraakRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T14:34:32.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IAfspraakRepository.cs",
-              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAfspraakRepository.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\IAfspraakRepository.cs",
-              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAfspraakRepository.cs",
-              "RelativeToolTip": "ZorgWebApi\\Interfaces\\IAfspraakRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T14:33:23.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AfspraakModel.cs",
-              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\AfspraakModel.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\AfspraakModel.cs",
-              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\AfspraakModel.cs",
-              "RelativeToolTip": "ZorgWebApi\\Models\\AfspraakModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T14:31:55.919Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -238,6 +185,55 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AfpraakController.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\AfpraakController.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\AfpraakController.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\AfpraakController.cs",
+              "RelativeToolTip": "ZorgWebApi\\Controllers\\AfpraakController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T14:47:38.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AfspraakRepository.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\AfspraakRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Repository\\AfspraakRepository.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\AfspraakRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Repository\\AfspraakRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T14:34:32.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAfspraakRepository.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAfspraakRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\IAfspraakRepository.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAfspraakRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Interfaces\\IAfspraakRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T14:33:23.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AfspraakModel.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\AfspraakModel.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Models\\AfspraakModel.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Models\\AfspraakModel.cs",
+              "RelativeToolTip": "ZorgWebApi\\Models\\AfspraakModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T14:31:55.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "DagboekRepository.cs",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\DagboekRepository.cs",
@@ -246,8 +242,7 @@
               "RelativeToolTip": "ZorgWebApi\\Repository\\DagboekRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T23:28:24.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T23:28:24.589Z"
             },
             {
               "$type": "Document",
@@ -259,8 +254,7 @@
               "RelativeToolTip": "ZorgWebApi\\Controllers\\DagboekController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T23:41:25.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T23:41:25.014Z"
             },
             {
               "$type": "Document",
@@ -272,8 +266,7 @@
               "RelativeToolTip": "ZorgWebApi\\Interfaces\\IDagboekRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T23:29:43.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T23:29:43.76Z"
             },
             {
               "$type": "Document",
@@ -297,8 +290,7 @@
               "RelativeToolTip": "ZorgWebApi\\Models\\ArtsModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T22:36:48.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T22:36:48.955Z"
             },
             {
               "$type": "Document",
@@ -322,8 +314,7 @@
               "RelativeToolTip": "ZorgWebApi\\Controllers\\PatientController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:49:56.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T15:49:56.503Z"
             },
             {
               "$type": "Document",
@@ -335,8 +326,7 @@
               "RelativeToolTip": "ZorgWebApi\\Repository\\PatientRepository.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAYwEAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:31:36.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T15:31:36.674Z"
             },
             {
               "$type": "Document",
@@ -360,8 +350,7 @@
               "RelativeToolTip": "ZorgWebApi\\Models\\PatientModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:50:38.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T15:50:38.941Z"
             },
             {
               "$type": "Document",
@@ -409,8 +398,7 @@
               "RelativeToolTip": "ZorgWebApi\\Models\\OuderVoogdModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T11:17:19.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T11:17:19.433Z"
             },
             {
               "$type": "Document",
@@ -494,8 +482,7 @@
               "RelativeToolTip": "ZorgWebApi\\Interfaces\\ITipRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T22:54:31.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T22:54:31.733Z"
             },
             {
               "$type": "Document",
@@ -555,8 +542,7 @@
               "RelativeToolTip": "ZorgWebApi\\Controllers\\TipController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T22:56:56.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T22:56:56.105Z"
             },
             {
               "$type": "Document",
