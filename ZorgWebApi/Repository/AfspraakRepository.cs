@@ -30,7 +30,7 @@ namespace ZorgWebApi.Repository
 
         public async Task CreateAfspraak(AfspraakModel afspraak)
         {
-            var query = "INSERT INTO Afspraken (Titel, NaamDokter, DatumTijd, UserId, Actief) VALUES (@Titel, @NaamDokter, @DatumTijd, @UserId, @Actief)";
+            var query = "INSERT INTO Afspraken (ID,Titel, NaamDokter, DatumTijd, UserId, Actief) VALUES (@ID,@Titel, @NaamDokter, @DatumTijd, @UserId, @Actief)";
             await _dbConnection.ExecuteAsync(query, afspraak);
         }
 
