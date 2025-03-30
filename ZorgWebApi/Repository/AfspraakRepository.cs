@@ -22,7 +22,7 @@ namespace ZorgWebApi.Repository
             return await _dbConnection.QueryAsync<AfspraakModel>(query, new { UserId = userId });
         }
 
-        public async Task<AfspraakModel> GetAfspraakById(int id, string userId)
+        public async Task<AfspraakModel> GetAfspraakById(Guid id, string userId)
         {
             var query = "SELECT * FROM Afspraken WHERE ID = @ID AND UserId = @UserId";
             return await _dbConnection.QueryFirstOrDefaultAsync<AfspraakModel>(query, new { ID = id, UserId = userId });
@@ -34,7 +34,7 @@ namespace ZorgWebApi.Repository
             await _dbConnection.ExecuteAsync(query, afspraak);
         }
 
-        public async Task DeleteAfspraak(int id, string userId)
+        public async Task DeleteAfspraak(Guid id, string userId)
         {
             var query = "DELETE FROM Afspraken WHERE ID = @ID AND UserId = @UserId";
             await _dbConnection.ExecuteAsync(query, new { ID = id, UserId = userId });
