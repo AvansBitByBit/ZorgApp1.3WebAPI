@@ -58,7 +58,6 @@ namespace ZorgWebApi.Controllers
         ///     "Titel": "Doktersafspraak",
         ///     "NaamDokter": "Dr. Smith",
         ///     "DatumTijd": "2023-10-15T14:30:00",
-        ///     "UserId": "user123",
         ///     "Actief": 1
         /// }
         /// </example>
@@ -66,6 +65,16 @@ namespace ZorgWebApi.Controllers
         public async Task<ActionResult> Add([FromBody] AfspraakModel afspraak)
         {
             var currentUser = _authenticationService.GetCurrentAuthenticatedUserId();
+            if (currentUser == null)
+            {
+                return Unauthorized();
+            }
+
+            if (string.IsNullOrEmpty(afspraak.Titel) || string.IsNullOrEmpty(afspraak.NaamDokter) || string.IsNullOrEmpty(afspraak.DatumTijd))
+            {
+                return BadRequest("Titel, NaamDokter, and DatumTijd are required.");
+            }
+
             var afspraken = await _repository.GetAfspraken(currentUser);
             bool afspraakExists = false;
             foreach (AfspraakModel test in afspraken)
@@ -75,7 +84,6 @@ namespace ZorgWebApi.Controllers
                     afspraakExists = true;
                     return BadRequest("Deze Titel bestaat al!!");
                 }
-                afspraak.UserId = currentUser;
             }
             if (afspraken.Count() >= 9)
             {
@@ -84,6 +92,7 @@ namespace ZorgWebApi.Controllers
             else
             {
                 afspraak.ID = Guid.NewGuid();
+                afspraak.UserId = currentUser;
                 await _repository.CreateAfspraak(afspraak);
                 return Ok("Afspraak is toegevoegd");
             }
