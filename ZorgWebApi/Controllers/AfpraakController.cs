@@ -62,7 +62,7 @@ namespace ZorgWebApi.Controllers
         }
 
         [HttpDelete("{id}", Name = "DeleteAfspraak")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             var userId = _authenticationService.GetCurrentAuthenticatedUserId();
             if (userId == null)
