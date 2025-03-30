@@ -6,6 +6,9 @@ using ZorgWebApi.Services;
 
 namespace ZorgWebApi.Controllers
 {
+    /// <summary>
+    /// Controller for managing afspraken (appointments).
+    /// </summary>
     [ApiController]
     [Route("Afspraak")]
     public class AfspraakController : ControllerBase
@@ -14,6 +17,12 @@ namespace ZorgWebApi.Controllers
         private readonly IAfspraakRepository _repository;
         private readonly IAuthenticationService _authenticationService;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AfspraakController"/> class.
+        /// </summary>
+        /// <param name="logger">The logger instance.</param>
+        /// <param name="authenticationService">The authentication service instance.</param>
+        /// <param name="repository">The afspraak repository instance.</param>
         public AfspraakController(ILogger<AfspraakController> logger, IAuthenticationService authenticationService, IAfspraakRepository repository)
         {
             _repository = repository;
@@ -21,6 +30,10 @@ namespace ZorgWebApi.Controllers
             _authenticationService = authenticationService;
         }
 
+        /// <summary>
+        /// Gets the list of afspraken for the authenticated user.
+        /// </summary>
+        /// <returns>A list of afspraken.</returns>
         [HttpGet(Name = "GetAfspraken")]
         public async Task<ActionResult<IEnumerable<AfspraakModel>>> Get()
         {
@@ -34,22 +47,37 @@ namespace ZorgWebApi.Controllers
             return Ok(afspraken);
         }
 
+        /// <summary>
+        /// Creates a new afspraak.
+        /// </summary>
+        /// <param name="afspraak">The afspraak model.</param>
+        /// <returns>A result indicating the outcome of the operation.</returns>
+        /// <example>
+        /// Example request body:
+        /// {
+        ///     "Titel": "Doktersafspraak",
+        ///     "NaamDokter": "Dr. Smith",
+        ///     "DatumTijd": "2023-10-15T14:30:00",
+        ///     "UserId": "user123",
+        ///     "Actief": 1
+        /// }
+        /// </example>
         [HttpPost(Name = "CreateAfspraak")]
         public async Task<ActionResult> Add([FromBody] AfspraakModel afspraak)
         {
-            var CurrentUser = _authenticationService.GetCurrentAuthenticatedUserId();
-            var Afspraken = await _repository.GetAfspraken(CurrentUser);
-            bool Afspraakexists = false;
-            foreach (AfspraakModel Test in Afspraken)
+            var currentUser = _authenticationService.GetCurrentAuthenticatedUserId();
+            var afspraken = await _repository.GetAfspraken(currentUser);
+            bool afspraakExists = false;
+            foreach (AfspraakModel test in afspraken)
             {
-                if (Test.Titel == afspraak.Titel)
+                if (test.Titel == afspraak.Titel)
                 {
-                    Afspraakexists = true;
+                    afspraakExists = true;
                     return BadRequest("Deze Titel bestaat al!!");
                 }
-                afspraak.UserId = CurrentUser;
+                afspraak.UserId = currentUser;
             }
-            if(Afspraken.Count() >= 9)
+            if (afspraken.Count() >= 9)
             {
                 return BadRequest("Je kan niet meer dan 9 afspraken maken!!");
             }
@@ -61,6 +89,11 @@ namespace ZorgWebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Deletes an afspraak by ID.
+        /// </summary>
+        /// <param name="id">The ID of the afspraak to delete.</param>
+        /// <returns>A result indicating the outcome of the operation.</returns>
         [HttpDelete("{id}", Name = "DeleteAfspraak")]
         public async Task<IActionResult> Delete(Guid id)
         {
