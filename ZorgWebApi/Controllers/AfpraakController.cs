@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using ZorgWebApi.Interfaces;
 using ZorgWebApi.Models;
 using ZorgWebApi.Services;
@@ -34,17 +35,30 @@ namespace ZorgWebApi.Controllers
         }
 
         [HttpPost(Name = "CreateAfspraak")]
-        public async Task<ActionResult> Create([FromBody] AfspraakModel afspraak)
+        public async Task<ActionResult> Add([FromBody] AfspraakModel afspraak)
         {
-            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
-            if (userId == null)
+            var CurrentUser = _authenticationService.GetCurrentAuthenticatedUserId();
+            var Afspraken = await _repository.GetAfspraken(CurrentUser);
+            bool Afspraakexists = false;
+            foreach (AfspraakModel Test in Afspraken)
             {
-                return Unauthorized();
+                if (Test.Titel == afspraak.Titel)
+                {
+                    Afspraakexists = true;
+                    return BadRequest("Deze Titel bestaat al!!");
+                }
+                afspraak.UserId = CurrentUser;
             }
-
-            afspraak.UserId = userId;
-            await _repository.CreateAfspraak(afspraak);
-            return CreatedAtRoute("GetAfspraken", new { id = afspraak.ID }, afspraak);
+            if(Afspraken.Count() >= 9)
+            {
+                return BadRequest("Je kan niet meer dan 9 afspraken maken!!");
+            }
+            else
+            {
+                afspraak.ID = Guid.NewGuid();
+                await _repository.CreateAfspraak(afspraak);
+                return Ok("Afspraak is toegevoegd");
+            }
         }
 
         [HttpDelete("{id}", Name = "DeleteAfspraak")]
