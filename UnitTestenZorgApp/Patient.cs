@@ -34,8 +34,8 @@ namespace UnitTestenZorgApp
             var userId = "123";
             var patients = new List<PatientModel>
             {
-                new PatientModel { ID = 1, Voornaam = "Jan", Achternaam = "Jansen", UserId = userId },
-                new PatientModel { ID = 2, Voornaam = "Piet", Achternaam = "Pietersen", UserId = userId }
+                new PatientModel { ID = 1, Voornaam = "Jan", Achternaam = "Jansen", TrajectID=2, UserId = userId },
+                new PatientModel { ID = 2, Voornaam = "Piet", Achternaam = "Pietersen",TrajectID=2, UserId = userId }
             };
 
             _mockAuthService.Setup(auth => auth.GetCurrentAuthenticatedUserId()).Returns(userId);
@@ -51,7 +51,7 @@ namespace UnitTestenZorgApp
             Assert.AreEqual(patients, okResult.Value);
         }
 
-        
+
     }
 }
 
