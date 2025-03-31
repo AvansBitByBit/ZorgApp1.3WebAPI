@@ -1,9 +1,7 @@
 using System.Data;
-using System.Threading.Tasks;
 using Dapper;
 using ZorgWebApi.Models;
 using ZorgWebApi.Interfaces;
-
 namespace ZorgWebApi.Repository
 {
     public class CharacterRepository : ICharacterRepository

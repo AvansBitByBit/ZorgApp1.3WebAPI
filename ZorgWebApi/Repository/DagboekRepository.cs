@@ -2,9 +2,6 @@
 using Dapper;
 using ZorgWebApi.Interfaces;
 using ZorgWebApi.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
 namespace ZorgWebApi.Repository
 {
     public class DagboekRepository : IDagboekRepository

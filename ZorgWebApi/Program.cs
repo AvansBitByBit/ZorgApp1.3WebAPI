@@ -1,17 +1,10 @@
-using Swashbuckle.AspNetCore.SwaggerGen;
-using Microsoft.OpenApi.Models;
 using Microsoft.Data.SqlClient;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Avans.Identity.Dapper;
-using Dapper;
 using ZorgWebApi.Interfaces;
 using ZorgWebApi.Repository;
 using ZorgWebApi.Services;
 using System.Data;
-using Microsoft.AspNetCore.DataProtection;
-using System.IO;
-
 
 var builder = WebApplication.CreateBuilder(args);
 

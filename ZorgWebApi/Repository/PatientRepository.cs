@@ -2,7 +2,6 @@
 using Dapper;
 using ZorgWebApi.Interfaces;
 using ZorgWebApi.Models;
-
 namespace ZorgWebApi.Repository
 {
     /// <summary>
@@ -38,7 +37,7 @@ namespace ZorgWebApi.Repository
         /// <param name="patient">The patient model containing the data to be inserted.</param>
         public async Task CreatePatient(PatientModel patient)
         {
-            var query = "INSERT INTO Patients (Voornaam, Achternaam, OuderVoogd_ID, TrajectID, ArtsID, UserId) VALUES (@Voornaam, @Achternaam, @OuderVoogd_ID, @TrajectID, @ArtsID, @UserId)";
+            var query = "INSERT INTO Patients (Voornaam, Achternaam, TrajectID, UserId) VALUES (@Voornaam, @Achternaam, @TrajectID, @UserId)";
             await _dbConnection.ExecuteAsync(query, patient);
         }
 
@@ -51,7 +50,5 @@ namespace ZorgWebApi.Repository
             var query = "DELETE FROM Patients WHERE ID = @ID AND UserId = @UserId";
             await _dbConnection.ExecuteAsync(query, patient);
         }
-
-      
     }
 }

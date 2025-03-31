@@ -1,6 +1,4 @@
 ﻿using ZorgWebApi.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace ZorgWebApi.Interfaces
 {
