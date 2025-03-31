@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting;
 using ZorgWebApi.Interfaces;
 using ZorgWebApi.Models;
 using ZorgWebApi.Services;
+using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace ZorgWebApi.Controllers
 {
-    /// <summary>
-    /// Controller for managing afspraken (appointments).
-    /// </summary>
     [ApiController]
     [Route("Afspraak")]
     public class AfspraakController : ControllerBase
@@ -17,12 +17,6 @@ namespace ZorgWebApi.Controllers
         private readonly IAfspraakRepository _repository;
         private readonly IAuthenticationService _authenticationService;
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="AfspraakController"/> class.
-        /// </summary>
-        /// <param name="logger">The logger instance.</param>
-        /// <param name="authenticationService">The authentication service instance.</param>
-        /// <param name="repository">The afspraak repository instance.</param>
         public AfspraakController(ILogger<AfspraakController> logger, IAuthenticationService authenticationService, IAfspraakRepository repository)
         {
             _repository = repository;
@@ -30,12 +24,6 @@ namespace ZorgWebApi.Controllers
             _authenticationService = authenticationService;
         }
 
-        /// <summary>
-        /// Gets the list of afspraken for the authenticated user.
-        /// </summary>
-        /// <returns>A list of afspraken.</returns>
-        /// <response code="200">Returns the list of afspraken</response>
-        /// <response code="401">If the user is not authenticated</response>
         [HttpGet(Name = "GetAfspraken")]
         public async Task<ActionResult<IEnumerable<AfspraakModel>>> Get()
         {
@@ -51,23 +39,26 @@ namespace ZorgWebApi.Controllers
             return Ok(afspraken);
         }
 
-        /// <summary>
-        /// Creates a new afspraak.
-        /// </summary>
-        /// <param name="afspraak">The afspraak model.</param>
-        /// <returns>A result indicating the outcome of the operation.</returns>
-        /// <response code="200">If the afspraak is successfully created</response>
-        /// <response code="400">If the request is invalid</response>
-        /// <response code="401">If the user is not authenticated</response>
-        /// <example>
-        /// Example request body:
-        /// {
-        ///     "Titel": "Doktersafspraak",
-        ///     "NaamDokter": "Dr. Smith",
-        ///     "DatumTijd": "2023-10-15T14:30:00",
-        ///     "Actief": 1
-        /// }
-        /// </example>
+        [HttpGet("{id}", Name = "GetAfspraakById")]
+        public async Task<ActionResult<AfspraakModel>> GetAfspraakById(Guid id)
+        {
+            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
+            if (userId == null)
+            {
+                _logger.LogWarning("Unauthorized access attempt to GetAfspraakById.");
+                return Unauthorized();
+            }
+
+            var afspraak = await _repository.GetAfspraakById(id, userId);
+            if (afspraak == null || afspraak.UserId != userId)
+            {
+                _logger.LogWarning("User {UserId} attempted to access afspraak {AfspraakId} which does not belong to them.", userId, id);
+                return Unauthorized();
+            }
+
+            return Ok(afspraak);
+        }
+
         [HttpPost(Name = "CreateAfspraak")]
         public async Task<ActionResult> Add([FromBody] AfspraakModel afspraak)
         {
@@ -107,15 +98,6 @@ namespace ZorgWebApi.Controllers
             return Ok("Afspraak is toegevoegd");
         }
 
-
-
-        /// <summary>
-        /// Deletes an afspraak by ID.
-        /// </summary>
-        /// <param name="id">The ID of the afspraak to delete.</param>
-        /// <returns>A result indicating the outcome of the operation.</returns>
-        /// <response code="204">If the afspraak is successfully deleted</response>
-        /// <response code="401">If the user is not authenticated</response>
         [HttpDelete("{id}", Name = "DeleteAfspraak")]
         public async Task<IActionResult> Delete(Guid id)
         {
@@ -132,4 +114,3 @@ namespace ZorgWebApi.Controllers
         }
     }
 }
-
