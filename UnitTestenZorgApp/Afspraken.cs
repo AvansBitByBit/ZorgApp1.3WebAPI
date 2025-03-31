@@ -73,5 +73,27 @@ namespace UnitTestenZorgApp
             // Assert
             Assert.IsInstanceOfType(result.Result, typeof(UnauthorizedResult));
         }
+
+        [TestMethod] // Kan een user een afspraak opvragen van zichzelf? result: OK
+        public async Task kanEenUserEenAfspraakOpvragenVanZichzelf_ResultOk()
+        {
+            // Arrange
+            var currentUserId = "123";
+            var afspraak = new AfspraakModel
+            {
+                ID = Guid.NewGuid(),
+                Titel = "Afspraak met dokter",
+                NaamDokter = "Dr. Jansen",
+                DatumTijd = "2021-06-01 10:00",
+                UserId = currentUserId,
+                Actief = 1
+            };
+            _mockAuthService.Setup(auth => auth.GetCurrentAuthenticatedUserId()).Returns(currentUserId);
+            _mockRepository.Setup(repo => repo.GetAfspraakById(It.IsAny<Guid>(), It.IsAny<string>())).ReturnsAsync(afspraak);
+            // Act
+            var result = await _controller.GetAfspraakById(afspraak.ID);
+            // Assert
+            Assert.IsInstanceOfType(result.Result, typeof(OkObjectResult));
+        }
     }
 }
