@@ -54,8 +54,7 @@
               "RelativeToolTip": "UnitTestenZorgApp\\MSTestSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:33:11.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:33:11.075Z"
             },
             {
               "$type": "Document",
@@ -63,9 +62,9 @@
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Character.cs",
               "RelativeDocumentMoniker": "UnitTestenZorgApp\\Character.cs",
-              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Character.cs",
-              "RelativeToolTip": "UnitTestenZorgApp\\Character.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Character.cs*",
+              "RelativeToolTip": "UnitTestenZorgApp\\Character.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T17:31:39.279Z",
               "EditorCaption": ""
@@ -73,15 +72,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UnitTestenZorgApp",
+              "Title": "UnitTestenZorgApp.csproj",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\UnitTestenZorgApp.csproj",
               "RelativeDocumentMoniker": "UnitTestenZorgApp\\UnitTestenZorgApp.csproj",
               "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\UnitTestenZorgApp.csproj",
               "RelativeToolTip": "UnitTestenZorgApp\\UnitTestenZorgApp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-31T17:29:33.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:29:33.885Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "ZorgWebApi\\Program.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAuwB4AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:29:20.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:29:20.64Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "UnitTestenZorgApp\\Patient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:10:45.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:10:45.235Z"
             },
             {
               "$type": "Document",
@@ -143,8 +139,7 @@
               "RelativeToolTip": "UnitTestenZorgApp\\Afspraken.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAAwGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:27:54.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T16:27:54.733Z"
             }
           ]
         }
