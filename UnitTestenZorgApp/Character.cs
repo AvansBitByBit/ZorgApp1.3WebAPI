@@ -44,7 +44,34 @@ namespace UnitTestenZorgApp
             Assert.AreEqual(character, okResult.Value);
         }
 
+        [TestMethod] // Test 2: Kan een character worden aangemaakt? Result: OK
 
-        
+        public async Task KanEenCharacterWordenAangemaakt_ResultOk()
+        {
+            var userId = "123";
+            var character = new Character
+            {
+                ID = 1,
+                HairColor = "Blond",
+                SkinColor = "Fair",
+                SpacesuitColor = "Red",
+                Hat = "None",
+            };
+
+            _mockAuthService.Setup(auth => auth.GetCurrentAuthenticatedUserId()).Returns(userId);
+            _mockService.Setup(service => service.GetCharacterByUserIdAsync(userId)).ReturnsAsync((Character)null);
+
+            // Act
+            var result = await _controller.CreateCharacter(character);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(OkObjectResult));
+            var okResult = result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+            Assert.AreEqual(character, okResult.Value);
+        }
+
+
+
+        }
     }
-}

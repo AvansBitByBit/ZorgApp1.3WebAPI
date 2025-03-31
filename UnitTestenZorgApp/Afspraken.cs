@@ -95,5 +95,20 @@ namespace UnitTestenZorgApp
             // Assert
             Assert.IsInstanceOfType(result.Result, typeof(OkObjectResult));
         }
+        [TestMethod] // Test 3: Kan een afspraak worden verwijderd? Result: NoContent
+        public async Task kanEenUserEenAfspraakVerwijderen_ResultNoContent()
+        {
+            // Arrange
+            var currentUserId = "123";
+            var afspraakId = Guid.NewGuid();
+            _mockAuthService.Setup(auth => auth.GetCurrentAuthenticatedUserId()).Returns(currentUserId);
+            _mockRepository.Setup(repo => repo.DeleteAfspraak(afspraakId, currentUserId)).Returns(Task.CompletedTask);
+
+            // Act
+            var result = await _controller.Delete(afspraakId);
+
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(NoContentResult));
+        }
     }
 }

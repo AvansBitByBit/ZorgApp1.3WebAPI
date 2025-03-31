@@ -74,35 +74,7 @@ public class PatientController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// Updates an existing patient record.
-    /// </summary>
-    /// <param name="id">The ID of the patient to be updated.</param>
-    /// <param name="patient">The patient model containing the updated data.</param>
-    [HttpPut("{id}", Name = "UpdatePatient")]
-    public async Task<IActionResult> Update(int id, [FromBody] PatientModel patient)
-    {
-        try
-        {
-            var userId = _authenticationService.GetCurrentAuthenticatedUserId();
-            if (userId == null)
-            {
-                return Unauthorized();
-            }
-            if (id != patient.ID || userId != patient.UserId)
-            {
-                return BadRequest("The ID or UserId did not match.");
-            }
-            await _repository.UpdatePatient(patient);
-            return Ok();
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError($"Error updating patient: {ex.Message}");
-            return StatusCode(500, "Internal Server Error");
-        }
-    }
-
+  
     /// <summary>
     /// Deletes an existing patient record.
     /// </summary>

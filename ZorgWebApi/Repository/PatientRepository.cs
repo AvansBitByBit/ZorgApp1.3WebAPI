@@ -52,14 +52,6 @@ namespace ZorgWebApi.Repository
             await _dbConnection.ExecuteAsync(query, patient);
         }
 
-        /// <summary>
-        /// Updates an existing patient record in the database.
-        /// </summary>
-        /// <param name="patient">The patient model containing the updated data.</param>
-        public async Task UpdatePatient(PatientModel patient)
-        {
-            var query = "UPDATE Patients SET Voornaam = @Voornaam, Achternaam = @Achternaam, OuderVoogd_ID = @OuderVoogd_ID, TrajectID = @TrajectID, ArtsID = @ArtsID WHERE ID = @ID AND UserId = @UserId";
-            await _dbConnection.ExecuteAsync(query, patient);
-        }
+      
     }
 }

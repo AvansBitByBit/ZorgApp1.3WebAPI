@@ -3,8 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\unittestenzorgapp\\afspraken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|solutionrelative:unittestenzorgapp\\afspraken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\controllers\\afpraakcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\controllers\\afpraakcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\unittestenzorgapp\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|solutionrelative:unittestenzorgapp\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\unittestenzorgapp\\aspnetidentititest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|solutionrelative:unittestenzorgapp\\aspnetidentititest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\repository\\afspraakrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\repository\\afspraakrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\services\\aspnetidentityauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\services\\aspnetidentityauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\services\\characterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\services\\characterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\unittestenzorgapp\\dagboek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|solutionrelative:unittestenzorgapp\\dagboek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\repository\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\repository\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\controllers\\dagboekcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\controllers\\dagboekcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\repository\\dagboekrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\repository\\dagboekrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\idagboekrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\interfaces\\idagboekrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\unittestenzorgapp\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +71,12 @@
       "RelativeMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|solutionrelative:unittestenzorgapp\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\unittestenzorgapp\\afspraken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|solutionrelative:unittestenzorgapp\\afspraken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\unittestenzorgapp\\unittestenzorgapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{BA8072D7-4BE4-4598-B97E-B007F741DB3B}|UnitTestenZorgApp\\UnitTestenZorgApp.csproj|solutionrelative:unittestenzorgapp\\unittestenzorgapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\controllers\\afpraakcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|solutionrelative:zorgwebapi\\controllers\\afpraakcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FB7C850-3667-46AA-8786-9C7B34DC0826}|ZorgWebApi\\ZorgWebApi.csproj|c:\\users\\rksgk\\documents\\unity project\\groepslu1\\zorgapp1.3webapi\\zorgwebapi\\interfaces\\iafspraakrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +90,206 @@
       "DocumentGroups": [
         {
           "DockedWidth": 158,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AspNetidentitiTest.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\AspNetidentitiTest.cs",
+              "RelativeDocumentMoniker": "UnitTestenZorgApp\\AspNetidentitiTest.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\AspNetidentitiTest.cs",
+              "RelativeToolTip": "UnitTestenZorgApp\\AspNetidentitiTest.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:55:15.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AfspraakRepository.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\AfspraakRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Repository\\AfspraakRepository.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\AfspraakRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Repository\\AfspraakRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:41:49.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Afspraken.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Afspraken.cs",
+              "RelativeDocumentMoniker": "UnitTestenZorgApp\\Afspraken.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Afspraken.cs*",
+              "RelativeToolTip": "UnitTestenZorgApp\\Afspraken.cs*",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAawGsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T16:27:54.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Character.cs",
+              "RelativeDocumentMoniker": "UnitTestenZorgApp\\Character.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Character.cs",
+              "RelativeToolTip": "UnitTestenZorgApp\\Character.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwEYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T17:31:39.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AfpraakController.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\AfpraakController.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\AfpraakController.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\AfpraakController.cs",
+              "RelativeToolTip": "ZorgWebApi\\Controllers\\AfpraakController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAkwG8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T16:41:30.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
+              "RelativeToolTip": "ZorgWebApi\\Interfaces\\IAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T19:02:31.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AspNetIdentityAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
+              "RelativeToolTip": "ZorgWebApi\\Services\\AspNetIdentityAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:54:27.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CharacterService.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\CharacterService.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Services\\CharacterService.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Services\\CharacterService.cs",
+              "RelativeToolTip": "ZorgWebApi\\Services\\CharacterService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:53:44.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Repository\\PatientRepository.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\PatientRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Repository\\PatientRepository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:52:37.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\IPatientRepository.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IPatientRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Interfaces\\IPatientRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:52:25.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "ZorgWebApi\\Controllers\\PatientController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:52:08.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DagboekRepository.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\DagboekRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Repository\\DagboekRepository.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Repository\\DagboekRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Repository\\DagboekRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:44:19.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dagboek.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Dagboek.cs",
+              "RelativeDocumentMoniker": "UnitTestenZorgApp\\Dagboek.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Dagboek.cs",
+              "RelativeToolTip": "UnitTestenZorgApp\\Dagboek.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAEkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:29:06.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DagboekController.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\DagboekController.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\DagboekController.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\DagboekController.cs",
+              "RelativeToolTip": "ZorgWebApi\\Controllers\\DagboekController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAuwEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:33:26.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IDagboekRepository.cs",
+              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IDagboekRepository.cs",
+              "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\IDagboekRepository.cs",
+              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IDagboekRepository.cs",
+              "RelativeToolTip": "ZorgWebApi\\Interfaces\\IDagboekRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:40:04.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "MSTestSettings.cs",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\MSTestSettings.cs",
               "RelativeDocumentMoniker": "UnitTestenZorgApp\\MSTestSettings.cs",
@@ -54,24 +297,12 @@
               "RelativeToolTip": "UnitTestenZorgApp\\MSTestSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:33:11.075Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Character.cs",
-              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Character.cs",
-              "RelativeDocumentMoniker": "UnitTestenZorgApp\\Character.cs",
-              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Character.cs*",
-              "RelativeToolTip": "UnitTestenZorgApp\\Character.cs*",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAIwFMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:31:39.279Z",
+              "WhenOpened": "2025-03-31T17:33:11.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "UnitTestenZorgApp.csproj",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\UnitTestenZorgApp.csproj",
               "RelativeDocumentMoniker": "UnitTestenZorgApp\\UnitTestenZorgApp.csproj",
@@ -83,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Program.cs",
               "RelativeDocumentMoniker": "ZorgWebApi\\Program.cs",
@@ -95,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "Patient.cs",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Patient.cs",
               "RelativeDocumentMoniker": "UnitTestenZorgApp\\Patient.cs",
@@ -107,19 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AfpraakController.cs",
-              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\AfpraakController.cs",
-              "RelativeDocumentMoniker": "ZorgWebApi\\Controllers\\AfpraakController.cs",
-              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Controllers\\AfpraakController.cs",
-              "RelativeToolTip": "ZorgWebApi\\Controllers\\AfpraakController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAwF0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:41:30.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "IAfspraakRepository.cs",
               "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\ZorgWebApi\\Interfaces\\IAfspraakRepository.cs",
               "RelativeDocumentMoniker": "ZorgWebApi\\Interfaces\\IAfspraakRepository.cs",
@@ -127,19 +346,8 @@
               "RelativeToolTip": "ZorgWebApi\\Interfaces\\IAfspraakRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:41:53.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Afspraken.cs",
-              "DocumentMoniker": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Afspraken.cs",
-              "RelativeDocumentMoniker": "UnitTestenZorgApp\\Afspraken.cs",
-              "ToolTip": "C:\\Users\\RKSGK\\Documents\\Unity project\\GroepsLU1\\ZorgApp1.3WebAPI\\UnitTestenZorgApp\\Afspraken.cs",
-              "RelativeToolTip": "UnitTestenZorgApp\\Afspraken.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAwGMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:27:54.733Z"
+              "WhenOpened": "2025-03-31T16:41:53.438Z",
+              "EditorCaption": ""
             }
           ]
         }

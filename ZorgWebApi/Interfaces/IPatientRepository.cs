@@ -25,11 +25,5 @@ namespace ZorgWebApi.Interfaces
         /// </summary>
         /// <param name="patient">The patient model containing the ID and UserId of the patient to be deleted.</param>
         Task DeletePatient(PatientModel patient);
-
-        /// <summary>
-        /// Updates an existing patient record in the database.
-        /// </summary>
-        /// <param name="patient">The patient model containing the updated data.</param>
-        Task UpdatePatient(PatientModel patient);
     }
 }
