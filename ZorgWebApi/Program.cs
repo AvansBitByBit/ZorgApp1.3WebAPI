@@ -29,7 +29,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<ICharacterRepository, CharacterRepository>();
 builder.Services.AddTransient<ICharacterService, CharacterService>();
 builder.Services.AddScoped<IPatientRepository, PatientRepository>();
-builder.Services.AddScoped<ITipRepository, TipRepository>();
 builder.Services.AddScoped<IDagboekRepository, DagboekRepository>();
 builder.Services.AddScoped<IAfspraakRepository, AfspraakRepository>();
 builder.Services.AddScoped<IAfspraakRepository, AfspraakRepository>();
