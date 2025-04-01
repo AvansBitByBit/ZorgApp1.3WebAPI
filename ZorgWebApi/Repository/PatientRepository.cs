@@ -37,7 +37,7 @@ namespace ZorgWebApi.Repository
         /// <param name="patient">The patient model containing the data to be inserted.</param>
         public async Task CreatePatient(PatientModel patient)
         {
-            var query = "INSERT INTO Patients (Voornaam, Achternaam, TrajectID, UserId) VALUES (@Voornaam, @Achternaam, @TrajectID, @UserId)";
+            var query = "INSERT INTO Patients (Voornaam, Achternaam, TrajectID, Geboortedatum, UserId) VALUES (@Voornaam, @Achternaam, @TrajectID,@Geboortedatum, @UserId)";
             await _dbConnection.ExecuteAsync(query, patient);
         }
 
