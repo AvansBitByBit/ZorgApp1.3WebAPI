@@ -2,8 +2,10 @@
 
 ZorgApp1.3WebAPI is a web API designed to support a game for patient kids who have broken a bone and need a cast. The API includes a character creator to ensure all kids feel represented in the game.
 
-## Project Structure
 
+
+## Project Structure
+![diagram (1)](https://github.com/user-attachments/assets/4680316b-273a-4f7f-9b23-9aed88b3472f)
 ### Controllers
 
 - **CharacterController.cs**: Handles HTTP requests related to character creation and retrieval.
