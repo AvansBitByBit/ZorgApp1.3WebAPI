@@ -51,24 +51,24 @@ namespace UnitTestenZorgApp
             Assert.AreEqual(patients, okResult.Value);
         }
 
-        //[TestMethod] // Test 2: Kan een patient worden aangemaakt? Result: Created
-        //public async Task KanEenPatientWordenAangemaakt_ResultCreated()
-        //{
-        //    // Arrange
-        //    var userId = "123";
-        //    var patient = new PatientModel { ID = 1, Voornaam = "Jan", Achternaam = "Jansen", TrajectID = 2, Geboortedatum = "23-23-32", UserId = userId };
-        //    _mockAuthService.Setup(auth => auth.GetCurrentAuthenticatedUserId()).Returns(userId);
-        //    _mockRepository.Setup(repo => repo.CreatePatient(patient)).Returns(Task.CompletedTask);
+        [TestMethod] // Test 2: Kan een patient worden aangemaakt? Result: Created
+        public async Task KanEenPatientWordenAangemaakt_ResultCreated()
+        {
+            // Arrange
+            var userId = "123";
+            var patient = new PatientModel { ID = 1, Voornaam = "Jan", Achternaam = "Jansen", TrajectID = 2, Geboortedatum = "23-23-32", UserId = userId };
+            _mockAuthService.Setup(auth => auth.GetCurrentAuthenticatedUserId()).Returns(userId);
+            _mockRepository.Setup(repo => repo.CreatePatient(patient)).Returns(Task.CompletedTask);
 
-        //    // Act
-        //    var result = await _controller.Create(patient);
+            // Act
+            var result = await _controller.Create(patient);
 
-        //    // Assert
-        //    Assert.IsInstanceOfType(result, typeof(CreatedAtActionResult));
-        //    var createdResult = result as CreatedAtActionResult;
-        //    Assert.IsNotNull(createdResult);
-        //    Assert.AreEqual(patient, createdResult.Value);
-        //}  werkt niet in azure wel local
+            // Assert
+            Assert.IsInstanceOfType(result, typeof(CreatedAtActionResult));
+            var createdResult = result as CreatedAtActionResult;
+            Assert.IsNotNull(createdResult);
+            Assert.AreEqual(patient, createdResult.Value);
+        }
 
 
     }
