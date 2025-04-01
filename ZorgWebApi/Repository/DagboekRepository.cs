@@ -27,13 +27,13 @@ namespace ZorgWebApi.Repository
 
         public async Task CreateDagboek(DagboekModel dagboek)
         {
-            var query = "INSERT INTO Dagboeken (Title, Contents, Date, UserId) VALUES (@Title, @Contents, @Date, @UserId)";
+            var query = "INSERT INTO Dagboeken (Title, Contents, UserId) VALUES (@Title, @Contents, @UserId)";
             await _dbConnection.ExecuteAsync(query, dagboek);
         }
 
         public async Task UpdateDagboek(DagboekModel dagboek)
         {
-            var query = "UPDATE Dagboeken SET Title = @Title, Contents = @Contents, Date = @Date WHERE ID = @ID AND UserId = @UserId";
+            var query = "UPDATE Dagboeken SET Title = @Title, Contents = @Contents, WHERE ID = @ID AND UserId = @UserId";
             await _dbConnection.ExecuteAsync(query, dagboek);
         }
 
