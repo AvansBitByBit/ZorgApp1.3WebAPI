@@ -2,8 +2,6 @@
 
 ZorgApp1.3WebAPI is a web API designed to support a game for patient kids who have broken a bone and need a cast. The API includes a character creator to ensure all kids feel represented in the game.
 
-
-
 ## Project Structure
 ![diagram (1)](https://github.com/user-attachments/assets/4680316b-273a-4f7f-9b23-9aed88b3472f)
 ### Controllers
@@ -103,4 +101,4 @@ ZorgApp1.3WebAPI is a web API designed to support a game for patient kids who ha
 
 ## Conclusion
 
-This project demonstrates how to create a web API with character creation functionality, user authentication, and database operations using Dapper. The code is organized into controllers, models, services, interfaces, and repositories to ensure a clean and maintainable structure.
+This project demonstrates how to create a web API with character creation functionality, user authentication, and database operations using Dapper. The code is organized into controllers, models, services, interfaces, and repositories to ensure a clean architecture.
