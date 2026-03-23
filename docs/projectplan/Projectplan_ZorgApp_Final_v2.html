@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projectplan ZorgApp 1.3 — Inleverversie</title>
+<style>
+:root{--paper:#fff;--ink:#182235;--muted:#5f6b7a;--line:#d9e2ef;--accent:#1d4ed8;--accent2:#6d28d9;--ok:#15803d;--warn:#b45309;--bad:#b91c1c;--shadow:0 18px 60px rgba(15,23,42,.12)}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#eef3ff,#f6f8fc);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink)}
+.page{width:210mm;min-height:297mm;margin:0 auto 10mm;background:var(--paper);box-shadow:var(--shadow);position:relative;page-break-after:always;overflow:hidden}.page:last-child{page-break-after:auto}
+.cover{background:linear-gradient(135deg,#0f1f46,#18366c 55%,#264b95);color:#fff}.cover:before{content:'';position:absolute;right:-65mm;top:-70mm;width:170mm;height:170mm;border-radius:50%;background:rgba(255,255,255,.08)}.cover:after{content:'';position:absolute;left:-35mm;bottom:-55mm;width:110mm;height:110mm;border-radius:50%;background:rgba(255,255,255,.07)}
+.cover-content{padding:24mm 20mm;position:relative;z-index:1}.content{padding:15mm 18mm 18mm}.badge{display:inline-block;padding:7px 12px;border:1px solid rgba(255,255,255,.22);border-radius:999px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;background:rgba(255,255,255,.07)}
+h1{font-size:31px;line-height:1.12;margin:18px 0 10px}h2{font-size:22px;color:#122344;margin:14px 0 8px;padding-bottom:6px;border-bottom:2px solid #dbe6fb}h3{font-size:16px;color:#1a3765;margin:12px 0 6px}p{font-size:12px;line-height:1.72;margin:7px 0 10px}ul{margin:8px 0 12px 18px}li{font-size:12px;line-height:1.6;margin:3px 0}
+.hero-grid{display:grid;grid-template-columns:1.08fr .82fr;gap:10mm;align-items:end;margin-top:14mm}.hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:10px}.hero-card img{width:100%;display:block;border-radius:12px}.meta{display:grid;grid-template-columns:1fr 1fr;gap:8px}.meta div{padding:10px;border-radius:12px;background:rgba(255,255,255,.08);font-size:12px}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10mm;margin-top:16mm}.info-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:14px}.info-card h3{color:#fff;margin-top:0}.info-card p,.info-card li{color:rgba(255,255,255,.92)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8mm}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:6mm}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:6mm}
+.card{border:1px solid var(--line);border-radius:16px;padding:12px;background:linear-gradient(180deg,#fff,#fbfdff)}.card h3{margin-top:0}.kpi{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}.kpi .n{font-size:26px;font-weight:700;color:#173b8c}
+.persona{border:1px solid var(--line);border-radius:16px;padding:12px;background:#fff}.persona h3{margin-top:0}.persona .tag{display:inline-block;padding:3px 8px;border-radius:999px;background:#eef4ff;color:#174ea6;font-size:10px;font-weight:700;margin-bottom:6px}
+.callout{padding:10px 12px;border-left:5px solid var(--accent);border-radius:12px;background:#f4f8ff;margin:12px 0}.warn{border-left-color:var(--warn);background:#fff8ed}.good{border-left-color:var(--ok);background:#effbf3}
+table{width:100%;border-collapse:collapse;font-size:11px;margin:8px 0 14px}th,td{border:1px solid var(--line);padding:8px 9px;vertical-align:top}th{background:#eef4ff;text-align:left;color:#173563}
+.figure{margin:10px 0 14px;border:1px solid var(--line);border-radius:16px;background:#fff;padding:12px}.figure img{width:100%;display:block;border-radius:10px}.caption{font-size:10.5px;color:var(--muted);margin-top:6px}
+.toc{margin-top:12px}.toc-row{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:end;font-size:13px;padding:7px 0}.toc-row .dots{border-bottom:1px dotted #97a6ba;height:10px}
+.moodboard{display:grid;grid-template-columns:1.1fr .9fr .9fr;grid-template-rows:120px 120px 120px;gap:8px}.moodboard img,.moodboard .mood{width:100%;height:100%;object-fit:cover;border-radius:14px}.mood{display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;background:linear-gradient(135deg,#eef4ff,#f7f1ff);border:1px solid var(--line);font-size:12px;line-height:1.5}
+.footer{position:absolute;left:18mm;right:18mm;bottom:10mm;display:flex;justify-content:space-between;align-items:center;color:#64748b;font-size:10px}.footer.light{color:rgba(255,255,255,.85)}
+.small{font-size:11px;color:var(--muted)}
+@page{size:A4;margin:0}@media print{body{background:#fff}.page{box-shadow:none;margin:0;width:auto;min-height:297mm}}
+</style>
+</head>
+<body>
+<section class="page cover">
+  <div class="cover-content">
+    <span class="badge">Plan van aanpak · UX · Requirements</span>
+    <h1>Projectplan ZorgApp 1.3</h1>
+    <p style="font-size:15px;line-height:1.7;max-width:145mm;color:rgba(255,255,255,.92)">Projectplan voor de ontwikkeling van een kindvriendelijke zorgapplicatie die kinderen en ouders ondersteunt tijdens het behandeltraject rondom botbreuken en gipsbehandelingen. Deze inleverversie combineert plan van aanpak, UX-ontwerp en requirements in één samenhangend document.</p>
+    <div class="hero-grid">
+      <div class="hero-card"><img src="http://127.0.0.1:8765/research/zorgapp1.3/ZorgApp/Assets/Images/Backgrounds/Btachtergrond1.jpeg" alt="zorgapp sfeerbeeld"></div>
+      <div>
+        <div class="hero-card" style="margin-bottom:8px"><img src="http://127.0.0.1:8765/research/zorgapp1.3/ZorgApp/Assets/Images/kenney_modular-characters/sample.png" alt="character art"></div>
+        <div class="meta">
+          <div><strong>Projectgroep</strong><br>BitByBit</div>
+          <div><strong>Klas</strong><br>2C (herkansing)</div>
+          <div><strong>Frontend</strong><br>Unity 6</div>
+          <div><strong>Backend</strong><br>.NET Web API + SQL Server</div>
+        </div>
+      </div>
+    </div>
+    <div class="info-grid">
+      <div class="info-card"><h3>Teamleden</h3><ul><li>Yazan Dawud</li><li>Rishyan Syal</li><li>Fabiano Pungol</li></ul></div>
+      <div class="info-card"><h3>Projectfocus</h3><p>Stressreductie, duidelijkheid in het behandeltraject, kindvriendelijke uitleg, ouderondersteuning, toegankelijkheid en veilige digitale ondersteuning in de zorg.</p></div>
+    </div>
+  </div>
+  <div class="footer light"><span>Projectplan ZorgApp 1.3 · BitByBit</span><span>Pagina 1</span></div>
+</section>
+
+<section class="page">
+  <div class="content">
+    <h2 style="margin-top:0">Inhoudsopgave</h2>
+    <div class="toc">
+      <div class="toc-row"><span>1. Context en aanleiding</span><span class="dots"></span><span>3</span></div>
+      <div class="toc-row"><span>2. Probleemdefinitie en doelstellingen</span><span class="dots"></span><span>3</span></div>
+      <div class="toc-row"><span>3. Stakeholders en communicatiestrategie</span><span class="dots"></span><span>4</span></div>
+      <div class="toc-row"><span>4. Projectaanpak op basis van Scrum</span><span class="dots"></span><span>5</span></div>
+      <div class="toc-row"><span>5. Risicoanalyse</span><span class="dots"></span><span>6</span></div>
+      <div class="toc-row"><span>6. UX-ontwerp: personas, moodboard en user flow</span><span class="dots"></span><span>6</span></div>
+      <div class="toc-row"><span>7. Wireframes en toegankelijkheid</span><span class="dots"></span><span>7</span></div>
+      <div class="toc-row"><span>8. Requirements, epics en user stories</span><span class="dots"></span><span>8</span></div>
+      <div class="toc-row"><span>9. Conclusie</span><span class="dots"></span><span>9</span></div>
+    </div>
+    <div class="grid3" style="margin-top:16mm">
+      <div class="kpi"><div class="n">3</div><div>persona’s</div></div>
+      <div class="kpi"><div class="n">4</div><div>kernvisuals</div></div>
+      <div class="kpi"><div class="n">7</div><div>epics</div></div>
+    </div>
+    <div class="figure" style="margin-top:16mm">
+      <img src="http://127.0.0.1:8765/diagram-projectplan-scrum.svg" alt="scrum roadmap preview">
+      <div class="caption">Preview van de Scrum-roadmap die verderop in het document wordt toegelicht.</div>
+    </div>
+  </div>
+  <div class="footer"><span>Projectplan ZorgApp 1.3</span><span>Pagina 2</span></div>
+</section>
+
+<section class="page">
+  <div class="content">
+    <h2 style="margin-top:0">1. Context en aanleiding</h2>
+    <p>Kinderen ervaren een ziekenhuisbezoek vaak als spannend, vooral wanneer sprake is van pijn, onbekende handelingen en beperkte grip op wat er gaat gebeuren. Bij een botbreuk of gipsbehandeling ontstaat vaak een combinatie van stress, onzekerheid en een gebrek aan begrijpelijke uitleg. Dit geldt niet alleen voor het kind, maar ook voor ouders die hun kind willen ondersteunen en tegelijkertijd zelf overzicht nodig hebben.</p>
+    <p>Binnen de zorg groeit de behoefte aan digitale ondersteuning die niet alleen informatief is, maar ook aansluit bij de belevingswereld van de gebruiker. In dit project staat daarom een kindvriendelijke, visuele en laagdrempelige applicatie centraal die het behandeltraject begrijpelijk maakt voor kinderen van 4 tot 12 jaar en hun ouders. Technologisch is deze oplossing haalbaar doordat mobiele en game-achtige interfaces in Unity goed kunnen worden gecombineerd met een veilige backend in .NET en SQL Server.</p>
+    <div class="callout good"><strong>Relevante trend:</strong> digitale zorgtoepassingen worden steeds belangrijker voor voorbereiding, nazorg en zelfredzaamheid. Voor kinderen is daarbij vooral van belang dat informatie niet alleen correct is, maar ook visueel, speels en emotioneel geruststellend wordt aangeboden.</div>
+
+    <h2>2. Probleemdefinitie en doelstellingen</h2>
+    <p>Het kernprobleem is dat kinderen en ouders onvoldoende toegankelijke, visuele en samenhangende ondersteuning hebben tijdens het behandeltraject rondom een botbreuk of gipsbehandeling. Hierdoor ontstaat onnodige onzekerheid, onduidelijkheid over de stappen in het traject en extra spanning voor het kind.</p>
+    <h3>Doelstellingen</h3>
+    <ul>
+      <li>Een digitale applicatie ontwikkelen die het behandeltraject stap voor stap visualiseert.</li>
+      <li>Kinderen op een speelse manier informeren met beelden, eenvoudige uitleg en herkenbare interactie.</li>
+      <li>Ouders ondersteunen met overzicht, afspraken, herinneringen en voortgangsinformatie.</li>
+      <li>Toegankelijkheid zichtbaar toepassen voor jonge kinderen en gebruikers met een beperking.</li>
+    </ul>
+    <h3>SMART geformuleerd</h3>
+    <table>
+      <thead><tr><th>Aspect</th><th>Uitwerking</th></tr></thead>
+      <tbody>
+        <tr><td>Specifiek</td><td>De applicatie richt zich op kinderen van 4–12 jaar met een botbreuk of gipsbehandeling en op hun ouders/verzorgers.</td></tr>
+        <tr><td>Meetbaar</td><td>De MVP bevat minimaal accountbeheer, behandeltraject-tijdlijn, uitlegcontent, avatarfunctie, dagboekfunctie en afspraken/herinneringen.</td></tr>
+        <tr><td>Haalbaar</td><td>De oplossing sluit aan op de aanwezige kennis in Unity, C#, Web API en UX-ontwerp binnen het projectteam.</td></tr>
+        <tr><td>Realistisch</td><td>De scope is begrensd tot begeleiding rondom botbreuken en gipsbehandelingen, zonder koppeling met ziekenhuisinformatiesystemen.</td></tr>
+        <tr><td>Tijdgebonden</td><td>Het project wordt uitgevoerd in vier sprints met een oplevering van een werkende en testbare versie aan het einde van het traject.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer"><span>Projectplan ZorgApp 1.3</span><span>Pagina 3</span></div>
+</section>
+
+<section class="page">
+  <div class="content">
+    <h2 style="margin-top:0">3. Stakeholders en communicatiestrategie</h2>
+    <p>Voor een zorgapplicatie zijn stakeholders niet alleen de opdrachtgever en het ontwikkelteam, maar ook eindgebruikers en begeleidende partijen. De invloed en verwachtingen van deze groepen verschillen sterk, waardoor een stakeholderanalyse noodzakelijk is.</p>
+    <div class="figure">
+      <img src="http://127.0.0.1:8765/diagram-projectplan-stakeholders.svg" alt="stakeholder matrix">
+      <div class="caption">Figuur 1 — Power-interest matrix van de belangrijkste stakeholders rondom het project.</div>
+    </div>
+
+    <table>
+      <thead><tr><th>Stakeholder</th><th>Belang</th><th>Invloed</th><th>Communicatiestrategie</th></tr></thead>
+      <tbody>
+        <tr><td>Afdeling kindergeneeskunde / opdrachtgever</td><td>Hoog</td><td>Hoog</td><td>Wekelijkse review, besluitvorming op requirements en validatie van richting</td></tr>
+        <tr><td>Kind / patiënt</td><td>Zeer hoog</td><td>Hoog als eindgebruiker</td><td>Feedback op begrijpelijkheid, plezier en gebruiksvriendelijkheid</td></tr>
+        <tr><td>Ouders / verzorgers</td><td>Hoog</td><td>Hoog</td><td>Regelmatige feedback op informatiebehoefte, overzicht en vertrouwen</td></tr>
+        <tr><td>Projectteam BitByBit</td><td>Hoog</td><td>Zeer hoog</td><td>Dagelijkse afstemming, sprintplanning, review en retrospectieve</td></tr>
+        <tr><td>Zorgverleners</td><td>Hoog</td><td>Middel</td><td>Inhoudelijke feedback op traject, taalgebruik en relevantie</td></tr>
+        <tr><td>AVG / digitale wet- en regelgeving</td><td>Middel</td><td>Hoog</td><td>Bewaken van privacy, veilige omgang met gegevens en passende scope</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout"><strong>Communicatiestrategie:</strong> stakeholders met hoge invloed en hoog belang worden actief betrokken in reviews en feedbackmomenten. Stakeholders met een lager direct belang maar wel relevante invloed, zoals regelgeving en adviserende partijen, worden op vaste momenten geraadpleegd.</div>
+  </div>
+  <div class="footer"><span>Projectplan ZorgApp 1.3</span><span>Pagina 4</span></div>
+</section>
+
+<section class="page">
+  <div class="content">
+    <h2 style="margin-top:0">4. Projectaanpak op basis van Scrum</h2>
+    <p>De uitvoering van het project is gebaseerd op Scrum. De reden hiervoor is dat de oplossing sterk afhankelijk is van iteratief ontwerpen, feedback verwerken en prioriteiten bijstellen op basis van gebruikservaring. Door in korte sprints te werken kan het team snel leren, verbeteren en steeds tastbare voortgang opleveren.</p>
+    <div class="figure">
+      <img src="http://127.0.0.1:8765/diagram-projectplan-scrum.svg" alt="scrum roadmap">
+      <div class="caption">Figuur 2 — Scrum-roadmap met vier sprints: onderzoek, UX/requirements, MVP-bouw en test/oplevering.</div>
+    </div>
+    <table>
+      <thead><tr><th>Sprint</th><th>Focus</th><th>Belangrijkste output</th></tr></thead>
+      <tbody>
+        <tr><td>Sprint 1</td><td>Context en onderzoek</td><td>Probleemanalyse, stakeholderanalyse, eerste projectscope</td></tr>
+        <tr><td>Sprint 2</td><td>UX en requirements</td><td>Personas, moodboard, wireframes, user flow, epics en user stories</td></tr>
+        <tr><td>Sprint 3</td><td>Bouw van de MVP</td><td>Werkende kernfunctionaliteiten zoals login, tijdlijn, avatar en dagboek</td></tr>
+        <tr><td>Sprint 4</td><td>Testen en afronden</td><td>Validatie, bugfixes, documentatie en eindoplevering</td></tr>
+      </tbody>
+    </table>
+    <h3>Scrum-rollen</h3>
+    <ul>
+      <li><strong>Product Owner:</strong> vertegenwoordigt de functionele wensen en prioriteiten van de opdrachtgever.</li>
+      <li><strong>Scrum Master:</strong> bewaakt het proces, de sprintstructuur en de samenwerking.</li>
+      <li><strong>Development Team:</strong> realiseert ontwerp, frontend, backend, testen en documentatie.</li>
+    </ul>
+
+    <h2>5. Risicoanalyse</h2>
+    <table>
+      <thead><tr><th>Risico</th><th>Kans</th><th>Impact</th><th>Maatregel</th></tr></thead>
+      <tbody>
+        <tr><td>De app sluit onvoldoende aan bij de belevingswereld van kinderen</td><td>Middel</td><td>Hoog</td><td>Vroeg testen met doelgroepgerichte feedback, iteratief verbeteren van visuals en flows</td></tr>
+        <tr><td>De planning loopt uit door technische complexiteit</td><td>Middel</td><td>Hoog</td><td>Focus op MVP, heldere sprintdoelen en wekelijkse herprioritering</td></tr>
+        <tr><td>Ouders ervaren te weinig overzicht of meerwaarde</td><td>Middel</td><td>Middel</td><td>Oudervriendelijke informatie- en notificatiefuncties expliciet meenemen in het ontwerp</td></tr>
+        <tr><td>Toegankelijkheid krijgt te weinig aandacht</td><td>Laag</td><td>Hoog</td><td>WCAG-principes opnemen in requirements, wireframes en reviewmomenten</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer"><span>Projectplan ZorgApp 1.3</span><span>Pagina 5</span></div>
+</section>
+
+<section class="page">
+  <div class="content">
+    <h2 style="margin-top:0">6. UX-ontwerp: personas, moodboard en user flow</h2>
+    <p>Het UX-ontwerp richt zich op drie hoofdgebruikers: het kind, de ouder/verzorger en een gebruiker met een extra toegankelijkheidsbehoefte. Deze drie perspectieven zorgen ervoor dat de app niet alleen leuk en begrijpelijk is, maar ook bruikbaar en inclusief.</p>
+    <div class="grid3">
+      <div class="persona"><div class="tag">Persona 1</div><h3>Milan, 8 jaar</h3><p><strong>Doel:</strong> weten wat er gaat gebeuren zonder bang te worden.</p><p><strong>Behoefte:</strong> korte uitleg, vrolijke visuals, herkenning via avatar.</p><p><strong>Pijnpunt:</strong> begrijpt medische taal niet en raakt snel onrustig.</p></div>
+      <div class="persona"><div class="tag">Persona 2</div><h3>Sarah, 37 jaar</h3><p><strong>Rol:</strong> moeder/verzorger.</p><p><strong>Behoefte:</strong> overzicht van afspraken, duidelijke uitleg en herstelinformatie.</p><p><strong>Pijnpunt:</strong> wil haar kind geruststellen, maar mist soms zelf structuur in het proces.</p></div>
+      <div class="persona"><div class="tag">Persona 3</div><h3>Jay, 10 jaar</h3><p><strong>Situatie:</strong> moeite met lezen en snel overprikkeld.</p><p><strong>Behoefte:</strong> grote knoppen, duidelijke contrasten, eenvoudige flow en ondersteunende audio/visuele cues.</p><p><strong>Pijnpunt:</strong> haakt af bij drukke of tekstzware schermen.</p></div>
+    </div>
+
+    <h3>Moodboard</h3>
+    <div class="moodboard">
+      <img src="http://127.0.0.1:8765/research/zorgapp1.3/ZorgApp/Assets/Images/Backgrounds/BTachtergrond2.jpeg" alt="moodboard visual 1">
+      <img src="http://127.0.0.1:8765/research/zorgapp1.3/ZorgApp/Assets/Images/Backgrounds/BTachtergrond3.jpeg" alt="moodboard visual 2">
+      <div class="mood">Ruimte-thema en zachte kleuren ondersteunen een veilig, avontuurlijk en minder klinisch gevoel.</div>
+      <img src="http://127.0.0.1:8765/research/zorgapp1.3/ZorgApp/Assets/Images/Spritesheets/PlanetMissiesPRIME.png" alt="moodboard visual 3">
+      <img src="http://127.0.0.1:8765/research/zorgapp1.3/ZorgApp/Assets/Images/Spritesheets/KnopIcoontjesPRIME%20upscaled.png" alt="moodboard visual 4">
+      <div class="mood">Karakter, beloning en voortgang maken het traject begrijpelijker en minder spannend voor kinderen.</div>
+      <img src="http://127.0.0.1:8765/research/zorgapp1.3/ZorgApp/Assets/Images/Pad/GalaxyPadPRIME.png" alt="moodboard visual 5">
+      <img src="http://127.0.0.1:8765/research/zorgapp1.3/ZorgApp/Assets/Images/kenney_modular-characters/preview.png" alt="moodboard visual 6">
+      <div class="mood">Het verhaal draait om begeleiding, uitleg, voortgang en een persoonlijke buddy-ervaring tijdens herstel.</div>
+    </div>
+
+    <h3>User flow</h3>
+    <div class="figure">
+      <img src="http://127.0.0.1:8765/diagram-projectplan-userflow.svg" alt="user flow diagram">
+      <div class="caption">Figuur 3 — De centrale user flow: starten, inloggen, traject kiezen, informatie ontvangen en persoonlijke voortgang volgen.</div>
+    </div>
+  </div>
+  <div class="footer"><span>Projectplan ZorgApp 1.3</span><span>Pagina 6</span></div>
+</section>
+
+<section class="page">
+  <div class="content">
+    <h2 style="margin-top:0">7. Wireframes en toegankelijkheid</h2>
+    <p>De wireframes zijn mobile-first opgezet. Dat past bij het gebruik in een zorgcontext, waarin ouders en kinderen de app snel en direct moeten kunnen openen op een telefoon of tablet. De gekozen schermstructuur legt de nadruk op grote knoppen, beperkte tekst per scherm, duidelijke hiërarchie en een rustige opbouw.</p>
+    <div class="figure">
+      <img src="http://127.0.0.1:8765/diagram-projectplan-wireframes.svg" alt="wireframes">
+      <div class="caption">Figuur 4 — Voorbeeldwireframes van login, behandeltraject-tijdlijn en dagboek/avatar-scherm.</div>
+    </div>
+    <h3>Toegankelijkheidsprincipes</h3>
+    <ul>
+      <li><strong>Duidelijk contrast:</strong> tekst en interactieve elementen moeten goed zichtbaar zijn, ook voor gebruikers met visuele beperkingen.</li>
+      <li><strong>Grote touch targets:</strong> knoppen en interactieve onderdelen worden groot genoeg ontworpen voor kinderen en voor motorische beperkingen.</li>
+      <li><strong>Eenvoudige taal:</strong> medische informatie wordt vertaald naar korte, kindvriendelijke uitleg.</li>
+      <li><strong>Consistente navigatie:</strong> schermen volgen dezelfde structuur zodat gebruikers snel leren hoe de app werkt.</li>
+    </ul>
+    <div class="callout good"><strong>UX-richting:</strong> de ontwerpkeuzes zijn bewust afgestemd op een combinatie van emotionele rust, visuele duidelijkheid en speelsheid. Daarmee ondersteunt het ontwerp zowel begrip als betrokkenheid.</div>
+  </div>
+  <div class="footer"><span>Projectplan ZorgApp 1.3</span><span>Pagina 7</span></div>
+</section>
+
+<section class="page">
+  <div class="content">
+    <h2 style="margin-top:0">8. Requirements, epics en user stories</h2>
+    <p>De requirements zijn onderverdeeld in functionele eisen, toegankelijkheidseisen en security-eisen. Deze zijn vervolgens vertaald naar epics en user stories met prioriteiten en acceptatiecriteria.</p>
+
+    <h3>Overzicht requirements</h3>
+    <table>
+      <thead><tr><th>Categorie</th><th>Requirement</th><th>Prioriteit</th></tr></thead>
+      <tbody>
+        <tr><td>Functioneel</td><td>Gebruikers kunnen een account aanmaken en inloggen</td><td>Must have</td></tr>
+        <tr><td>Functioneel</td><td>De app toont een visuele tijdlijn van het behandeltraject</td><td>Must have</td></tr>
+        <tr><td>Functioneel</td><td>De app bevat video’s, afbeeldingen en eenvoudige uitleg</td><td>Must have</td></tr>
+        <tr><td>Functioneel</td><td>De gebruiker kan een avatar aanpassen</td><td>Must have</td></tr>
+        <tr><td>Functioneel</td><td>De gebruiker kan dagboekitems en afspraken beheren</td><td>Must have</td></tr>
+        <tr><td>Accessibility</td><td>De interface gebruikt voldoende contrast en grote interactieve elementen</td><td>Must have</td></tr>
+        <tr><td>Accessibility</td><td>De navigatie is eenvoudig en consequent voor jonge gebruikers</td><td>Must have</td></tr>
+        <tr><td>Security</td><td>Gebruikersdata wordt alleen per ingelogde gebruiker getoond</td><td>Must have</td></tr>
+        <tr><td>Security</td><td>Authenticatie en opslag verlopen server-side via beveiligde API-routes</td><td>Must have</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Epics</h3>
+    <div class="grid2">
+      <div class="card"><h3>EP01 Accountbeheer</h3><p>Registratie, login en persoonlijke patiëntgegevens.</p></div>
+      <div class="card"><h3>EP02 Behandeltraject en tijdlijn</h3><p>Visuele weergave van stappen, afspraken en voortgang.</p></div>
+      <div class="card"><h3>EP03 Voorlichting en uitleg</h3><p>Video’s, afbeeldingen en kindvriendelijke uitleg.</p></div>
+      <div class="card"><h3>EP04 Avatar</h3><p>Persoonlijke avatar en herkenbare begeleiding.</p></div>
+      <div class="card"><h3>EP05 Dagboekfunctie</h3><p>Vastleggen van gevoelens, notities en herstelmomenten.</p></div>
+      <div class="card"><h3>EP06 Herstel en opvolging</h3><p>Herinneringen, afspraken en tips voor nazorg.</p></div>
+    </div>
+
+    <h3>User stories met acceptatiecriteria</h3>
+    <table>
+      <thead><tr><th>Epic</th><th>User story</th><th>Prioriteit</th><th>Acceptatiecriteria</th></tr></thead>
+      <tbody>
+        <tr><td>EP01</td><td>Als ouder wil ik een account kunnen aanmaken of inloggen, zodat ik toegang krijg tot het behandeltraject van mijn kind.</td><td>Must</td><td>Registratie en login zijn beschikbaar; foutmeldingen zijn duidelijk; alleen ingelogde gebruikers zien eigen data.</td></tr>
+        <tr><td>EP02</td><td>Als ouder wil ik een visuele tijdlijn zien, zodat ik overzicht heb over de stappen in het behandeltraject.</td><td>Must</td><td>De tijdlijn toont stappen in logische volgorde; afspraken en belangrijke momenten zijn zichtbaar.</td></tr>
+        <tr><td>EP02</td><td>Als kind wil ik een speelse weergave van mijn behandelroute zien, zodat het traject begrijpelijker en minder spannend is.</td><td>Must</td><td>De tijdlijn gebruikt visuele elementen; tekst is beperkt en eenvoudig; elke stap heeft een duidelijke betekenis.</td></tr>
+        <tr><td>EP03</td><td>Als ouder wil ik toegang tot video’s, teksten en afbeeldingen, zodat ik weet wat de behandeling inhoudt.</td><td>Must</td><td>Content is per traject beschikbaar; uitleg is begrijpelijk; beeldmateriaal ondersteunt de tekst.</td></tr>
+        <tr><td>EP04</td><td>Als kind wil ik een persoonlijke avatar hebben, zodat ik me herken in de app.</td><td>Must</td><td>De avatar kan worden aangepast; wijzigingen worden opgeslagen; het resultaat is zichtbaar in de interface.</td></tr>
+        <tr><td>EP05</td><td>Als ouder wil ik een dagboek kunnen bijhouden, zodat ik voortgang en herstel kan documenteren.</td><td>Must</td><td>Dagboekitems kunnen worden toegevoegd, bekeken en aangepast; items zijn gekoppeld aan de juiste gebruiker.</td></tr>
+        <tr><td>EP06</td><td>Als ouder wil ik herinneringen voor afspraken en herstelmomenten ontvangen, zodat ik het traject goed kan begeleiden.</td><td>Must</td><td>Afspraken kunnen worden toegevoegd; herinneringen zijn zichtbaar; de gebruiker houdt overzicht op vervolgstappen.</td></tr>
+        <tr><td>A11Y</td><td>Als gebruiker met een beperking wil ik duidelijke knoppen en goed leesbare schermen, zodat ik de app zelfstandig kan gebruiken.</td><td>Must</td><td>Knoppen zijn groot genoeg; contrast is voldoende; de flow is eenvoudig en herhaalbaar.</td></tr>
+        <tr><td>SEC</td><td>Als gebruiker wil ik dat mijn gegevens veilig worden beheerd, zodat privé-informatie niet zichtbaar is voor anderen.</td><td>Must</td><td>Authenticatie is verplicht voor persoonlijke data; data wordt server-side gefilterd op gebruiker; routes zijn beveiligd.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer"><span>Projectplan ZorgApp 1.3</span><span>Pagina 8</span></div>
+</section>
+
+<section class="page">
+  <div class="content">
+    <h2 style="margin-top:0">9. Conclusie</h2>
+    <p>Dit projectplan beschrijft een duidelijke en uitvoerbare aanpak voor de ontwikkeling van een kindvriendelijke zorgapplicatie. De context, het probleem en de doelstellingen zijn uitgewerkt vanuit de praktijk van kinderen en ouders die ondersteuning nodig hebben tijdens een behandeltraject. Door te werken met Scrum, een gerichte stakeholderaanpak, uitgewerkte UX-componenten en methodisch opgebouwde requirements ontstaat een plan dat niet alleen richting geeft aan de ontwikkeling, maar ook een duidelijke basis vormt voor validatie en oplevering.</p>
+    <p>De combinatie van plan van aanpak, UX-ontwerp en requirements maakt dit document breed inzetbaar: het ondersteunt zowel de inhoudelijke afstemming met stakeholders als de praktische uitvoering door het projectteam. De gekozen aanpak sluit aan op een oplossing die begrijpelijk, veilig, toegankelijk en haalbaar is binnen de projectscope.</p>
+    <div class="grid4" style="margin-top:16mm">
+      <div class="kpi"><div class="n">4</div><div>sprints</div></div>
+      <div class="kpi"><div class="n">3</div><div>primaire persona’s</div></div>
+      <div class="kpi"><div class="n">9</div><div>kernrequirements</div></div>
+      <div class="kpi"><div class="n">1</div><div>samenhangend projectplan</div></div>
+    </div>
+  </div>
+  <div class="footer"><span>Projectplan ZorgApp 1.3 · BitByBit</span><span>Pagina 9</span></div>
+</section>
+
+</body>
+</html>
