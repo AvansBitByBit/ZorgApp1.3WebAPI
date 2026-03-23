@@ -1,0 +1,54 @@
+<svg viewBox="0 0 1100 460" xmlns="http://www.w3.org/2000/svg">
+  <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5e5e5" stroke-width="0.5"/></pattern></defs>
+  <rect width="1100" height="460" fill="#fafafa"/>
+  <rect width="1100" height="460" fill="url(#grid)"/>
+  <text x="40" y="40" font-family="monospace" font-size="14" fill="#333" font-weight="bold">PROJECTPLAN_SCRUM</text>
+  <text x="205" y="40" font-family="monospace" font-size="12" fill="#888">[ SPRINT_ROADMAP ]</text>
+
+  <rect x="60" y="105" width="180" height="190" fill="none" stroke="#9b59b6" stroke-width="2"/>
+  <text x="150" y="130" text-anchor="middle" font-family="monospace" font-size="12" fill="#9b59b6" font-weight="bold">SPRINT_1</text>
+  <text x="150" y="155" text-anchor="middle" font-family="monospace" font-size="10" fill="#666">context & research</text>
+  <text x="75" y="185" font-family="monospace" font-size="9" fill="#666">• probleemanalyse</text>
+  <text x="75" y="205" font-family="monospace" font-size="9" fill="#666">• stakeholderanalyse</text>
+  <text x="75" y="225" font-family="monospace" font-size="9" fill="#666">• doelgroepinterviews / enquete</text>
+  <text x="75" y="245" font-family="monospace" font-size="9" fill="#666">• productvisie aanscherpen</text>
+
+  <rect x="300" y="105" width="180" height="190" fill="none" stroke="#3498db" stroke-width="2"/>
+  <text x="390" y="130" text-anchor="middle" font-family="monospace" font-size="12" fill="#3498db" font-weight="bold">SPRINT_2</text>
+  <text x="390" y="155" text-anchor="middle" font-family="monospace" font-size="10" fill="#666">ux & requirements</text>
+  <text x="315" y="185" font-family="monospace" font-size="9" fill="#666">• personas</text>
+  <text x="315" y="205" font-family="monospace" font-size="9" fill="#666">• moodboard & wireframes</text>
+  <text x="315" y="225" font-family="monospace" font-size="9" fill="#666">• user flow</text>
+  <text x="315" y="245" font-family="monospace" font-size="9" fill="#666">• epics & user stories</text>
+
+  <rect x="540" y="105" width="180" height="190" fill="none" stroke="#27ae60" stroke-width="2"/>
+  <text x="630" y="130" text-anchor="middle" font-family="monospace" font-size="12" fill="#27ae60" font-weight="bold">SPRINT_3</text>
+  <text x="630" y="155" text-anchor="middle" font-family="monospace" font-size="10" fill="#666">build mvp</text>
+  <text x="555" y="185" font-family="monospace" font-size="9" fill="#666">• account / login</text>
+  <text x="555" y="205" font-family="monospace" font-size="9" fill="#666">• tijdlijn & content</text>
+  <text x="555" y="225" font-family="monospace" font-size="9" fill="#666">• avatar / dagboek</text>
+  <text x="555" y="245" font-family="monospace" font-size="9" fill="#666">• feedback verwerken</text>
+
+  <rect x="780" y="105" width="180" height="190" fill="none" stroke="#f39c12" stroke-width="2"/>
+  <text x="870" y="130" text-anchor="middle" font-family="monospace" font-size="12" fill="#f39c12" font-weight="bold">SPRINT_4</text>
+  <text x="870" y="155" text-anchor="middle" font-family="monospace" font-size="10" fill="#666">test & delivery</text>
+  <text x="795" y="185" font-family="monospace" font-size="9" fill="#666">• testen & bugfixes</text>
+  <text x="795" y="205" font-family="monospace" font-size="9" fill="#666">• validatie met stakeholders</text>
+  <text x="795" y="225" font-family="monospace" font-size="9" fill="#666">• documentatie</text>
+  <text x="795" y="245" font-family="monospace" font-size="9" fill="#666">• eindoplevering</text>
+
+  <g stroke="#ccc" stroke-width="2" fill="none">
+    <path d="M 240 200 L 300 200"/>
+    <path d="M 480 200 L 540 200"/>
+    <path d="M 720 200 L 780 200"/>
+  </g>
+  <g fill="#ccc">
+    <polygon points="292,195 300,200 292,205"/>
+    <polygon points="532,195 540,200 532,205"/>
+    <polygon points="772,195 780,200 772,205"/>
+  </g>
+
+  <rect x="120" y="340" width="820" height="55" fill="none" stroke="#ccc"/>
+  <text x="530" y="362" text-anchor="middle" font-family="monospace" font-size="10" fill="#666">scrum ceremonies</text>
+  <text x="530" y="382" text-anchor="middle" font-family="monospace" font-size="9" fill="#999">weekly sprint planning · daily stand-up · sprint review · retrospective · backlog refinement</text>
+</svg>

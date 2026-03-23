@@ -1,0 +1,46 @@
+<svg viewBox="0 0 1000 780" xmlns="http://www.w3.org/2000/svg">
+  <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5e5e5" stroke-width="0.5"/></pattern></defs>
+  <rect width="1000" height="780" fill="#fafafa"/>
+  <rect width="1000" height="780" fill="url(#grid)"/>
+  <text x="40" y="40" font-family="monospace" font-size="14" fill="#333" font-weight="bold">PROJECTPLAN_UX_FLOW</text>
+  <text x="200" y="40" font-family="monospace" font-size="12" fill="#888">[ USER_FLOW ]</text>
+  <line x1="500" y1="80" x2="500" y2="700" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <ellipse cx="500" cy="100" rx="125" ry="28" fill="#fff" stroke="#3498db" stroke-width="2"/>
+  <text x="500" y="106" font-family="monospace" font-size="11" fill="#3498db" text-anchor="middle">START: KIND_OF_OUDER_OPENT_APP</text>
+
+  <path d="M500 128 L500 155" stroke="#ccc" stroke-width="1.5"/><polygon points="495,153 500,163 505,153" fill="#ccc"/>
+  <rect x="355" y="165" width="290" height="52" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+  <text x="500" y="196" font-family="monospace" font-size="11" fill="#9b59b6" text-anchor="middle">LOGIN_OF_REGISTRATIE</text>
+
+  <path d="M500 217 L500 244" stroke="#ccc" stroke-width="1.5"/><polygon points="495,242 500,252 505,242" fill="#ccc"/>
+  <rect x="355" y="255" width="290" height="52" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+  <text x="500" y="286" font-family="monospace" font-size="11" fill="#9b59b6" text-anchor="middle">PATIENTGEGEVENS_EN_TRAJECT_KIEZEN</text>
+
+  <path d="M500 307 L500 334" stroke="#ccc" stroke-width="1.5"/><polygon points="495,332 500,342 505,332" fill="#ccc"/>
+  <polygon points="500,350 590,398 500,446 410,398" fill="#fff" stroke="#e74c3c" stroke-width="2"/>
+  <text x="500" y="395" font-family="monospace" font-size="10" fill="#e74c3c" text-anchor="middle">WELKE_BEHOEFTE?</text>
+  <text x="500" y="412" font-family="monospace" font-size="8" fill="#999" text-anchor="middle">informatie · planning · geruststelling</text>
+
+  <path d="M410 398 L240 398" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="290" y="390" font-family="monospace" font-size="9" fill="#e74c3c">tijdlijn</text>
+  <rect x="70" y="372" width="170" height="52" fill="#fff" stroke="#3498db" stroke-width="2"/>
+  <text x="155" y="403" font-family="monospace" font-size="11" fill="#3498db" text-anchor="middle">BEHANDELTIJDLIJN</text>
+
+  <path d="M590 398 L760 398" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="710" y="390" font-family="monospace" font-size="9" fill="#e74c3c">uitleg</text>
+  <rect x="760" y="372" width="170" height="52" fill="#fff" stroke="#27ae60" stroke-width="2"/>
+  <text x="845" y="403" font-family="monospace" font-size="11" fill="#27ae60" text-anchor="middle">VIDEO_EN_UITLEG</text>
+
+  <path d="M500 446 L500 475" stroke="#ccc" stroke-width="1.5"/><polygon points="495,473 500,483 505,473" fill="#ccc"/>
+  <rect x="355" y="490" width="290" height="52" fill="#fff" stroke="#f39c12" stroke-width="2"/>
+  <text x="500" y="521" font-family="monospace" font-size="11" fill="#f39c12" text-anchor="middle">AVATAR_DAGBOEK_EN_AFSPRAKEN</text>
+
+  <path d="M500 542 L500 570" stroke="#ccc" stroke-width="1.5"/><polygon points="495,568 500,578 505,568" fill="#ccc"/>
+  <rect x="355" y="585" width="290" height="52" fill="#fff" stroke="#27ae60" stroke-width="2"/>
+  <text x="500" y="616" font-family="monospace" font-size="11" fill="#27ae60" text-anchor="middle">HERINNERINGEN_EN_HERSTELONDERSTEUNING</text>
+
+  <path d="M500 637 L500 664" stroke="#ccc" stroke-width="1.5"/><polygon points="495,662 500,672 505,662" fill="#ccc"/>
+  <ellipse cx="500" cy="695" rx="145" ry="28" fill="#fff" stroke="#3498db" stroke-width="2"/>
+  <text x="500" y="701" font-family="monospace" font-size="11" fill="#3498db" text-anchor="middle">RESULTAAT: MEER_OVERZICHT_EN_MINDER_STRESS</text>
+</svg>

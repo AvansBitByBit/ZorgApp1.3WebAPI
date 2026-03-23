@@ -1,0 +1,57 @@
+<svg viewBox="0 0 1100 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5e5e5" stroke-width="0.5"/></pattern>
+  </defs>
+  <rect width="1100" height="700" fill="#fafafa"/>
+  <rect width="1100" height="700" fill="url(#grid)"/>
+  <text x="40" y="40" font-family="monospace" font-size="14" fill="#333" font-weight="bold">PROJECTPLAN_STAKEHOLDERS</text>
+  <text x="255" y="40" font-family="monospace" font-size="12" fill="#888">[ POWER_INTEREST_MATRIX ]</text>
+
+  <line x1="140" y1="590" x2="980" y2="590" stroke="#ccc" stroke-width="2"/>
+  <line x1="140" y1="590" x2="140" y2="110" stroke="#ccc" stroke-width="2"/>
+  <text x="560" y="640" font-family="monospace" font-size="11" fill="#666" text-anchor="middle">BELANG / INTEREST →</text>
+  <text x="45" y="360" font-family="monospace" font-size="11" fill="#666" transform="rotate(-90 45,360)" text-anchor="middle">INVLOED / POWER →</text>
+
+  <line x1="560" y1="110" x2="560" y2="590" stroke="#ddd" stroke-dasharray="6 6"/>
+  <line x1="140" y1="350" x2="980" y2="350" stroke="#ddd" stroke-dasharray="6 6"/>
+
+  <text x="350" y="135" font-family="monospace" font-size="10" fill="#999" text-anchor="middle">KEEP SATISFIED</text>
+  <text x="770" y="135" font-family="monospace" font-size="10" fill="#999" text-anchor="middle">MANAGE CLOSELY</text>
+  <text x="350" y="375" font-family="monospace" font-size="10" fill="#999" text-anchor="middle">MONITOR</text>
+  <text x="770" y="375" font-family="monospace" font-size="10" fill="#999" text-anchor="middle">KEEP INFORMED</text>
+
+  <g font-family="monospace" font-size="10">
+    <rect x="220" y="175" width="170" height="42" rx="8" fill="#fff" stroke="#f39c12" stroke-width="2"/>
+    <text x="305" y="201" text-anchor="middle" fill="#f39c12">AMPHIA_MANAGEMENT</text>
+
+    <rect x="700" y="170" width="220" height="42" rx="8" fill="#fff" stroke="#3498db" stroke-width="2"/>
+    <text x="810" y="196" text-anchor="middle" fill="#3498db">AFDELING_KINDERGENEESKUNDE</text>
+
+    <rect x="650" y="250" width="170" height="42" rx="8" fill="#fff" stroke="#27ae60" stroke-width="2"/>
+    <text x="735" y="276" text-anchor="middle" fill="#27ae60">OUDERS_VERZORGERS</text>
+
+    <rect x="745" y="310" width="150" height="42" rx="8" fill="#fff" stroke="#e74c3c" stroke-width="2"/>
+    <text x="820" y="336" text-anchor="middle" fill="#e74c3c">PATIENT_KIND</text>
+
+    <rect x="645" y="115" width="170" height="42" rx="8" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+    <text x="730" y="141" text-anchor="middle" fill="#9b59b6">PROJECTTEAM_BITBYBIT</text>
+
+    <rect x="230" y="280" width="150" height="42" rx="8" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+    <text x="305" y="306" text-anchor="middle" fill="#9b59b6">PRODUCT_OWNER</text>
+
+    <rect x="245" y="430" width="140" height="42" rx="8" fill="#fff" stroke="#999" stroke-width="2"/>
+    <text x="315" y="456" text-anchor="middle" fill="#666">STICHTING_DAPPER_KIND</text>
+
+    <rect x="690" y="430" width="140" height="42" rx="8" fill="#fff" stroke="#999" stroke-width="2"/>
+    <text x="760" y="456" text-anchor="middle" fill="#666">ZORGVERLENERS</text>
+
+    <rect x="250" y="505" width="110" height="42" rx="8" fill="#fff" stroke="#999" stroke-width="2"/>
+    <text x="305" y="531" text-anchor="middle" fill="#666">KAR</text>
+
+    <rect x="400" y="505" width="120" height="42" rx="8" fill="#fff" stroke="#999" stroke-width="2"/>
+    <text x="460" y="531" text-anchor="middle" fill="#666">WDO_AVG</text>
+  </g>
+
+  <rect x="170" y="70" width="770" height="24" fill="none" stroke="#ccc"/>
+  <text x="555" y="86" font-family="monospace" font-size="10" fill="#999" text-anchor="middle">matrix shows which stakeholders require close collaboration, regular updates, or periodic validation</text>
+</svg>

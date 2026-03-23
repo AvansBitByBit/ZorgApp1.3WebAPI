@@ -1,0 +1,62 @@
+<svg viewBox="0 0 1100 760" xmlns="http://www.w3.org/2000/svg">
+  <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5e5e5" stroke-width="0.5"/></pattern></defs>
+  <rect width="1100" height="760" fill="#fafafa"/>
+  <rect width="1100" height="760" fill="url(#grid)"/>
+  <text x="40" y="40" font-family="monospace" font-size="14" fill="#333" font-weight="bold">PROJECTPLAN_WIREFRAMES</text>
+  <text x="230" y="40" font-family="monospace" font-size="12" fill="#888">[ MOBILE_FIRST ]</text>
+
+  <g transform="translate(90,90)">
+    <rect x="0" y="0" width="240" height="520" rx="28" fill="#fff" stroke="#ccc" stroke-width="2"/>
+    <rect x="20" y="25" width="200" height="34" fill="none" stroke="#3498db" stroke-width="1.5"/>
+    <text x="120" y="47" text-anchor="middle" font-family="monospace" font-size="10" fill="#3498db">LOGIN</text>
+    <rect x="20" y="85" width="200" height="90" fill="none" stroke="#ccc"/>
+    <text x="120" y="135" text-anchor="middle" font-family="monospace" font-size="9" fill="#999">illustratie / welkom</text>
+    <rect x="20" y="205" width="200" height="36" fill="none" stroke="#ccc"/>
+    <text x="120" y="228" text-anchor="middle" font-family="monospace" font-size="9" fill="#666">e-mail</text>
+    <rect x="20" y="255" width="200" height="36" fill="none" stroke="#ccc"/>
+    <text x="120" y="278" text-anchor="middle" font-family="monospace" font-size="9" fill="#666">wachtwoord</text>
+    <rect x="20" y="315" width="200" height="44" fill="none" stroke="#27ae60" stroke-width="2"/>
+    <text x="120" y="342" text-anchor="middle" font-family="monospace" font-size="10" fill="#27ae60">inloggen</text>
+    <rect x="20" y="370" width="200" height="44" fill="none" stroke="#9b59b6" stroke-width="2"/>
+    <text x="120" y="397" text-anchor="middle" font-family="monospace" font-size="10" fill="#9b59b6">account aanmaken</text>
+    <text x="120" y="485" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">SCHERM 1</text>
+    <text x="120" y="503" text-anchor="middle" font-family="monospace" font-size="9" fill="#999">kindvriendelijke login</text>
+  </g>
+
+  <g transform="translate(430,90)">
+    <rect x="0" y="0" width="240" height="520" rx="28" fill="#fff" stroke="#ccc" stroke-width="2"/>
+    <rect x="20" y="25" width="200" height="34" fill="none" stroke="#3498db" stroke-width="1.5"/>
+    <text x="120" y="47" text-anchor="middle" font-family="monospace" font-size="10" fill="#3498db">TIJDLIJN</text>
+    <line x1="50" y1="90" x2="50" y2="390" stroke="#ddd" stroke-dasharray="4 4"/>
+    <circle cx="50" cy="115" r="10" fill="#27ae60"/><text x="78" y="120" font-family="monospace" font-size="9" fill="#666">SEH</text>
+    <circle cx="50" cy="185" r="10" fill="#3498db"/><text x="78" y="190" font-family="monospace" font-size="9" fill="#666">gipskamer</text>
+    <circle cx="50" cy="255" r="10" fill="#9b59b6"/><text x="78" y="260" font-family="monospace" font-size="9" fill="#666">uitleg thuis</text>
+    <circle cx="50" cy="325" r="10" fill="#f39c12"/><text x="78" y="330" font-family="monospace" font-size="9" fill="#666">controle</text>
+    <rect x="20" y="420" width="200" height="44" fill="none" stroke="#27ae60" stroke-width="2"/>
+    <text x="120" y="447" text-anchor="middle" font-family="monospace" font-size="10" fill="#27ae60">volgende stap bekijken</text>
+    <text x="120" y="485" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">SCHERM 2</text>
+    <text x="120" y="503" text-anchor="middle" font-family="monospace" font-size="9" fill="#999">visuele behandelroute</text>
+  </g>
+
+  <g transform="translate(770,90)">
+    <rect x="0" y="0" width="240" height="520" rx="28" fill="#fff" stroke="#ccc" stroke-width="2"/>
+    <rect x="20" y="25" width="200" height="34" fill="none" stroke="#3498db" stroke-width="1.5"/>
+    <text x="120" y="47" text-anchor="middle" font-family="monospace" font-size="10" fill="#3498db">DAGBOEK & AVATAR</text>
+    <rect x="20" y="85" width="85" height="120" fill="none" stroke="#9b59b6" stroke-width="1.5"/>
+    <text x="62" y="148" text-anchor="middle" font-family="monospace" font-size="9" fill="#9b59b6">avatar</text>
+    <rect x="120" y="85" width="100" height="36" fill="none" stroke="#ccc"/>
+    <text x="170" y="108" text-anchor="middle" font-family="monospace" font-size="9" fill="#666">kleur kiezen</text>
+    <rect x="120" y="135" width="100" height="36" fill="none" stroke="#ccc"/>
+    <text x="170" y="158" text-anchor="middle" font-family="monospace" font-size="9" fill="#666">hoed kiezen</text>
+    <rect x="20" y="230" width="200" height="100" fill="none" stroke="#ccc"/>
+    <text x="120" y="283" text-anchor="middle" font-family="monospace" font-size="9" fill="#666">dagboek notitie / gevoel</text>
+    <rect x="20" y="350" width="200" height="44" fill="none" stroke="#27ae60" stroke-width="2"/>
+    <text x="120" y="377" text-anchor="middle" font-family="monospace" font-size="10" fill="#27ae60">opslaan</text>
+    <rect x="20" y="405" width="200" height="44" fill="none" stroke="#f39c12" stroke-width="2"/>
+    <text x="120" y="432" text-anchor="middle" font-family="monospace" font-size="10" fill="#f39c12">afspraak toevoegen</text>
+    <text x="120" y="485" text-anchor="middle" font-family="monospace" font-size="10" fill="#333">SCHERM 3</text>
+    <text x="120" y="503" text-anchor="middle" font-family="monospace" font-size="9" fill="#999">persoonlijke voortgang</text>
+  </g>
+
+  <text x="550" y="710" font-family="monospace" font-size="10" fill="#999" text-anchor="middle">wireframes show a mobile-first structure focused on simplicity, visibility and child-friendly navigation</text>
+</svg>
