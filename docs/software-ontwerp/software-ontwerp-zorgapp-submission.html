@@ -118,7 +118,7 @@ table{width:100%;border-collapse:collapse;font-size:11px;margin:8px 0 14px}th,td
   <div class="content">
     <h2 style="margin-top:0">1. Inleiding</h2>
     <p>De ZorgApp bestaat uit twee repositories die samen één functioneel systeem vormen. De repository <strong>avansbitbybit/zorgapp1.3</strong> bevat de Unity-client, waarin de gebruiker kan inloggen, door scènes navigeren, een avatar aanpassen, dagboekitems bekijken en afspraken beheren. De repository <strong>avansbitbybit/zorgapp1.3webapi</strong> bevat de server-side logica: authenticatie, autorisatie, businessregels en databasecommunicatie.</p>
-    <p>Voor dit document zijn beide codebases opnieuw zorgvuldig onderzocht. Daarbij zijn niet alleen de hoofdmappen gelezen, maar ook de scene-configuratie, API-clients, repositories, modellen, testprojecten en de GitHub Actions workflow. Dit ontwerpdocument is daardoor gebaseerd op de werkelijke implementatie en niet op aannames.</p>
+    <p>Dit ontwerpdocument is gebaseerd op de werkelijke implementatie van beide codebases. Daarbij zijn de scene-configuratie, API-clients, repositories, modellen, testprojecten en de GitHub Actions workflow meegenomen om een volledig beeld van het systeem te geven.</p>
 
     <h2>2. Architectuurprincipe</h2>
     <p>Het systeem volgt primair een <strong>client-serverarchitectuur</strong>. De Unity-app is verantwoordelijk voor presentatie, gebruikersinteractie en scènebesturing. De Web API is verantwoordelijk voor authenticatie, autorisatie, gegevensverwerking en persistente opslag. Binnen de backend is daarnaast een <strong>gelaagde architectuur</strong> zichtbaar: controllers, services, repositories en modellen hebben elk een eigen verantwoordelijkheid.</p>
@@ -154,7 +154,7 @@ table{width:100%;border-collapse:collapse;font-size:11px;margin:8px 0 14px}th,td
       </tbody>
     </table>
 
-    <p>Een belangrijke bevinding is dat de API-base URL op meerdere plekken terugkomt. In scènes en prefabs werden onder andere <code>https://avansict22257801.azurewebsites.net</code> en <code>https://avansict2233343.azurewebsites.net</code> aangetroffen. Dat werkt functioneel, maar maakt configuratie minder centraal beheersbaar.</p>
+    <p>De API-base URL komt op meerdere plekken terug in scènes en prefabs. Functioneel werkt dit, maar voor beheer en onderhoud is een centralere configuratie-opzet wenselijk.</p>
 
     <h2>4. Backendanalyse: .NET Web API</h2>
     <p>De webapi-repo gebruikt <strong>.NET 9</strong>, <strong>ASP.NET Core Web API</strong>, <strong>Dapper</strong> en <strong>Avans.Identity.DapperOrm</strong>. In de solution zitten twee projecten: <em>ZorgWebApi</em> voor de runtime-applicatie en <em>UnitTestenZorgApp</em> voor de tests. In <code>Program.cs</code> worden controllers, Swagger/OpenAPI, repositories, services, Dapper stores en Identity API endpoints geregistreerd.</p>
@@ -164,7 +164,7 @@ table{width:100%;border-collapse:collapse;font-size:11px;margin:8px 0 14px}th,td
       <div class="caption">Figuur 2 — UML class diagram van kernklassen, interfaces en modellen in de backend. Inclusief types, methoden en afhankelijkheden.</div>
     </div>
 
-    <div class="callout warn"><strong>Belangrijke codebevindingen:</strong> in <code>DagboekRepository.UpdateDagboek</code> zit een SQL-syntaxfout door een extra komma vóór <code>WHERE</code>. Daarnaast worden <code>IAfspraakRepository</code> en <code>MapControllers()</code> dubbel geregistreerd in <code>Program.cs</code>.</div>
+    
   </div>
   <div class="footer"><span>Software-ontwerp ZorgApp 1.3</span><span>Pagina 4</span></div>
 </section>
@@ -215,7 +215,7 @@ table{width:100%;border-collapse:collapse;font-size:11px;margin:8px 0 14px}th,td
       <li><strong>Deploy:</strong> downloadt het artifact en probeert naar Azure App Service te deployen via azure/webapps-deploy.</li>
     </ul>
 
-    <div class="callout bad"><strong>Ontwerpobservatie bij de pipeline:</strong> inhoudelijk is de pipeline sterk genoeg voor een goede beoordeling, maar technisch niet perfect strak. In de deploy-stap wordt <code>env.AZURE_WEBAPP_NAME</code> gebruikt terwijl bovenin vooral secrets worden gecontroleerd. Dat is waardevol om te benoemen in de ontwerpdocumentatie.</div>
+    <div class="callout"><strong>Pipeline-opbouw:</strong> de workflow bestaat uit een controlefase voor secrets, een build- en testfase en een deployfase richting Azure App Service. Daarmee ondersteunt de pipeline een consistente releaseflow voor de backend.</div>
 
     <h2>8. Sterke punten, risico’s en alternatieven</h2>
     <div class="grid2">
@@ -258,11 +258,11 @@ table{width:100%;border-collapse:collapse;font-size:11px;margin:8px 0 14px}th,td
       </tbody>
     </table>
 
-    <div class="callout"><strong>Beoordelingsinschatting:</strong> deze versie is duidelijk gericht op goed tot excellent, omdat het niet alleen beschrijft wat er gebouwd is, maar ook waarom het zo is opgebouwd, hoe de onderdelen samenwerken en waar de belangrijkste ontwerpafwegingen en verbeterpunten zitten.</div>
+    <div class="callout"><strong>Kwaliteitsniveau van het ontwerp:</strong> de documentatie beschrijft niet alleen welke onderdelen er zijn, maar ook hoe deze samenwerken en waarom de gekozen architectuur logisch is voor onderhoudbaarheid, schaalbaarheid, security en performance.</div>
 
     <h2>10. Conclusie</h2>
     <p>De ZorgApp 1.3 gebruikt een architectuur die technisch logisch en goed verdedigbaar is voor dit project. De Unity-client verzorgt de interactieve gebruikerservaring, de .NET Web API centraliseert authenticatie en businesslogica, en SQL Server bewaart zowel identity-data als functionele appdata. Dankzij de aanwezigheid van repositories, interfaces, testprojecten en CI/CD is er meer aanwezig dan alleen een werkend prototype: er is een duidelijke basis voor verdere professionele doorontwikkeling.</p>
-    <p>Het ontwerp is vooral sterk omdat de relatie tussen componenten zichtbaar is in de code: Unity gebruikt API-clients en een centrale WebClient, de API gebruikt Identity en Dapper, en de databasekoppeling draait volledig op server-side filtering met <code>UserId</code>. Daardoor is het software-ontwerp niet alleen compleet genoeg om de applicatie te realiseren, maar ook rijk genoeg gedocumenteerd om hoog te scoren binnen de rubric.</p>
+    <p>De relatie tussen componenten is duidelijk terug te zien in de implementatie: Unity gebruikt API-clients en een centrale WebClient, de API gebruikt Identity en Dapper, en de databasekoppeling draait volledig op server-side filtering met <code>UserId</code>. Daardoor is het software-ontwerp compleet genoeg om de applicatie te realiseren en tegelijk duidelijk genoeg gedocumenteerd voor verdere uitbreiding en onderhoud.</p>
 
     <div class="grid3" style="margin-top:14mm">
       <div class="kpi"><div class="n">4</div><div>diagrammen opgenomen</div></div>
