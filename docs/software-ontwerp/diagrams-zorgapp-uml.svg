@@ -1,0 +1,134 @@
+<svg viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5e5e5" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#ccc"/></marker>
+  </defs>
+  <rect width="1200" height="760" fill="#fafafa"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+  <text x="40" y="40" font-family="monospace" font-size="14" fill="#333" font-weight="bold">ZORGAPP_BACKEND</text>
+  <text x="190" y="40" font-family="monospace" font-size="12" fill="#888">[ UML_CLASS_DIAGRAM ]</text>
+
+  <g font-family="monospace" font-size="10" fill="#333">
+    <rect x="40" y="90" width="230" height="180" fill="#fff" stroke="#3498db" stroke-width="2"/>
+    <text x="155" y="115" text-anchor="middle" font-weight="bold" fill="#3498db">PatientController</text>
+    <line x1="40" y1="125" x2="270" y2="125" stroke="#ccc"/>
+    <text x="50" y="145">- _repository: IPatientRepository</text>
+    <text x="50" y="162">- _authenticationService: IAuthenticationService</text>
+    <text x="50" y="179">- _logger: ILogger&lt;PatientController&gt;</text>
+    <line x1="40" y1="190" x2="270" y2="190" stroke="#ccc"/>
+    <text x="50" y="210">+ Get(): Task&lt;ActionResult&lt;IEnumerable&lt;PatientModel&gt;&gt;&gt;</text>
+    <text x="50" y="227">+ Create(patient: PatientModel): Task&lt;ActionResult&gt;</text>
+    <text x="50" y="244">+ Delete(id: int): Task&lt;IActionResult&gt;</text>
+
+    <rect x="320" y="90" width="230" height="150" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+    <text x="435" y="115" text-anchor="middle" font-weight="bold" fill="#9b59b6">IPatientRepository</text>
+    <line x1="320" y1="125" x2="550" y2="125" stroke="#ccc"/>
+    <text x="330" y="145">+ GetPatients(userId: string)</text>
+    <text x="330" y="162">+ CreatePatient(patient: PatientModel)</text>
+    <text x="330" y="179">+ DeletePatient(patient: PatientModel)</text>
+
+    <rect x="600" y="70" width="250" height="205" fill="#fff" stroke="#f39c12" stroke-width="2"/>
+    <text x="725" y="95" text-anchor="middle" font-weight="bold" fill="#f39c12">PatientRepository</text>
+    <line x1="600" y1="105" x2="850" y2="105" stroke="#ccc"/>
+    <text x="610" y="125">- _dbConnection: IDbConnection</text>
+    <line x1="600" y1="138" x2="850" y2="138" stroke="#ccc"/>
+    <text x="610" y="158">+ GetPatients(userId: string)</text>
+    <text x="610" y="175">+ CreatePatient(patient: PatientModel)</text>
+    <text x="610" y="192">+ DeletePatient(patient: PatientModel)</text>
+    <text x="610" y="218">SQL: SELECT/INSERT/DELETE Patients</text>
+
+    <rect x="900" y="90" width="240" height="160" fill="#fff" stroke="#27ae60" stroke-width="2"/>
+    <text x="1020" y="115" text-anchor="middle" font-weight="bold" fill="#27ae60">PatientModel</text>
+    <line x1="900" y1="125" x2="1140" y2="125" stroke="#ccc"/>
+    <text x="910" y="145">+ ID: int</text>
+    <text x="910" y="162">+ Voornaam: string</text>
+    <text x="910" y="179">+ Achternaam: string</text>
+    <text x="910" y="196">+ Geboortedatum: string</text>
+    <text x="910" y="213">+ TrajectID: int</text>
+    <text x="910" y="230">+ UserId: string?</text>
+
+    <rect x="40" y="350" width="230" height="175" fill="#fff" stroke="#3498db" stroke-width="2"/>
+    <text x="155" y="375" text-anchor="middle" font-weight="bold" fill="#3498db">AfspraakController</text>
+    <line x1="40" y1="385" x2="270" y2="385" stroke="#ccc"/>
+    <text x="50" y="405">- _repository: IAfspraakRepository</text>
+    <text x="50" y="422">- _authenticationService: IAuthenticationService</text>
+    <line x1="40" y1="435" x2="270" y2="435" stroke="#ccc"/>
+    <text x="50" y="455">+ Get(): Task&lt;ActionResult&lt;IEnumerable&lt;AfspraakModel&gt;&gt;&gt;</text>
+    <text x="50" y="472">+ GetAfspraakById(id: Guid)</text>
+    <text x="50" y="489">+ Add(afspraak: AfspraakModel)</text>
+    <text x="50" y="506">+ Delete(id: Guid)</text>
+
+    <rect x="320" y="350" width="230" height="150" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+    <text x="435" y="375" text-anchor="middle" font-weight="bold" fill="#9b59b6">IAfspraakRepository</text>
+    <line x1="320" y1="385" x2="550" y2="385" stroke="#ccc"/>
+    <text x="330" y="405">+ GetAfspraken(userId: string)</text>
+    <text x="330" y="422">+ GetAfspraakById(id: Guid, userId: string)</text>
+    <text x="330" y="439">+ CreateAfspraak(afspraak: AfspraakModel)</text>
+    <text x="330" y="456">+ DeleteAfspraak(id: Guid, userId: string)</text>
+
+    <rect x="600" y="330" width="250" height="205" fill="#fff" stroke="#f39c12" stroke-width="2"/>
+    <text x="725" y="355" text-anchor="middle" font-weight="bold" fill="#f39c12">AfspraakRepository</text>
+    <line x1="600" y1="365" x2="850" y2="365" stroke="#ccc"/>
+    <text x="610" y="385">- _dbConnection: IDbConnection</text>
+    <line x1="600" y1="398" x2="850" y2="398" stroke="#ccc"/>
+    <text x="610" y="418">+ GetAfspraken(userId: string)</text>
+    <text x="610" y="435">+ GetAfspraakById(id: Guid, userId: string)</text>
+    <text x="610" y="452">+ CreateAfspraak(afspraak: AfspraakModel)</text>
+    <text x="610" y="469">+ DeleteAfspraak(id: Guid, userId: string)</text>
+    <text x="610" y="495">SQL: SELECT/INSERT/DELETE Afspraken</text>
+
+    <rect x="900" y="350" width="240" height="160" fill="#fff" stroke="#27ae60" stroke-width="2"/>
+    <text x="1020" y="375" text-anchor="middle" font-weight="bold" fill="#27ae60">AfspraakModel</text>
+    <line x1="900" y1="385" x2="1140" y2="385" stroke="#ccc"/>
+    <text x="910" y="405">+ ID: Guid</text>
+    <text x="910" y="422">+ Titel: string</text>
+    <text x="910" y="439">+ NaamDokter: string</text>
+    <text x="910" y="456">+ DatumTijd: string</text>
+    <text x="910" y="473">+ UserId: string</text>
+    <text x="910" y="490">+ Actief: int</text>
+
+    <rect x="40" y="590" width="280" height="110" fill="#fff" stroke="#e74c3c" stroke-width="2"/>
+    <text x="180" y="615" text-anchor="middle" font-weight="bold" fill="#e74c3c">AspNetIdentityAuthenticationService</text>
+    <line x1="40" y1="625" x2="320" y2="625" stroke="#ccc"/>
+    <text x="50" y="645">- _httpContextAccessor: IHttpContextAccessor</text>
+    <line x1="40" y1="658" x2="320" y2="658" stroke="#ccc"/>
+    <text x="50" y="678">+ GetCurrentAuthenticatedUserId(): string?</text>
+
+    <rect x="390" y="590" width="240" height="110" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+    <text x="510" y="615" text-anchor="middle" font-weight="bold" fill="#9b59b6">IAuthenticationService</text>
+    <line x1="390" y1="625" x2="630" y2="625" stroke="#ccc"/>
+    <text x="400" y="648">+ GetCurrentAuthenticatedUserId(): string?</text>
+
+    <rect x="700" y="580" width="260" height="125" fill="#fff" stroke="#3498db" stroke-width="2"/>
+    <text x="830" y="605" text-anchor="middle" font-weight="bold" fill="#3498db">CharacterController</text>
+    <line x1="700" y1="615" x2="960" y2="615" stroke="#ccc"/>
+    <text x="710" y="635">- _characterService: ICharacterService</text>
+    <text x="710" y="652">- _authenticationService: IAuthenticationService</text>
+    <line x1="700" y1="665" x2="960" y2="665" stroke="#ccc"/>
+    <text x="710" y="685">+ GetCharacter()</text>
+
+    <rect x="1000" y="580" width="160" height="125" fill="#fff" stroke="#9b59b6" stroke-width="2"/>
+    <text x="1080" y="605" text-anchor="middle" font-weight="bold" fill="#9b59b6">ICharacterService</text>
+    <line x1="1000" y1="615" x2="1160" y2="615" stroke="#ccc"/>
+    <text x="1010" y="635">+ GetCharacterByUserIdAsync</text>
+    <text x="1010" y="652">+ CreateCharacterAsync</text>
+    <text x="1010" y="669">+ UpdateCharacterAsync</text>
+  </g>
+
+  <g stroke="#ccc" stroke-width="1.5" fill="none" marker-end="url(#arrow)">
+    <path d="M 270 175 L 320 165"/>
+    <path d="M 550 165 L 600 165"/>
+    <path d="M 850 170 L 900 170"/>
+    <path d="M 270 430 L 320 420"/>
+    <path d="M 550 420 L 600 420"/>
+    <path d="M 850 430 L 900 430"/>
+    <path d="M 180 590 L 390 640"/>
+    <path d="M 830 580 L 1000 635"/>
+    <path d="M 180 590 L 70 525"/>
+    <path d="M 180 590 L 70 270"/>
+  </g>
+
+  <text x="600" y="735" font-family="monospace" font-size="10" fill="#999" text-anchor="middle">uml view of core backend classes, interfaces and models derived from the actual webapi repository</text>
+</svg>

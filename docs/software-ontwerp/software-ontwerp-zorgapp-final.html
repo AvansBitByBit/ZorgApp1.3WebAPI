@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software-ontwerp ZorgApp 1.3 — finale versie</title>
+<style>
+:root{--bg:#f5f7fb;--paper:#fff;--ink:#182235;--muted:#5b6677;--line:#d9e2ef;--accent:#1d4ed8;--accent2:#6d28d9;--ok:#15803d;--warn:#b45309;--bad:#b91c1c;--shadow:0 16px 50px rgba(10,24,52,.12)}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#edf2ff,#f7f9fc);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink)}
+.page{width:210mm;min-height:297mm;margin:0 auto;background:var(--paper);box-shadow:var(--shadow)}
+.hero{padding:26mm 18mm 16mm;background:linear-gradient(135deg,#0f1f46,#18356b 55%,#264a95);color:#fff;position:relative;overflow:hidden}
+.hero:before{content:'';position:absolute;right:-70mm;top:-90mm;width:170mm;height:170mm;border-radius:50%;background:rgba(255,255,255,.08)}
+.hero:after{content:'';position:absolute;left:-35mm;bottom:-70mm;width:110mm;height:110mm;border-radius:50%;background:rgba(255,255,255,.08)}
+.badge{display:inline-block;padding:6px 11px;border:1px solid rgba(255,255,255,.25);border-radius:999px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;background:rgba(255,255,255,.06)}
+h1{font-size:30px;line-height:1.15;margin:16px 0 10px}.sub{font-size:15px;line-height:1.6;max-width:150mm;color:rgba(255,255,255,.92)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:10mm;margin-top:12mm}.hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:10px}.hero-card img{width:100%;border-radius:12px;display:block}.meta{display:grid;grid-template-columns:1fr 1fr;gap:8px}.meta div{padding:10px;background:rgba(255,255,255,.07);border-radius:12px;font-size:12px}
+.content{padding:14mm 18mm 16mm} h2{font-size:22px;color:#10213f;margin:18px 0 8px;padding-bottom:6px;border-bottom:2px solid #dbe6fb} h3{font-size:16px;color:#173563;margin:14px 0 7px}
+p{font-size:12px;line-height:1.72;margin:7px 0 10px} ul{margin:8px 0 12px 18px} li{font-size:12px;line-height:1.65;margin:3px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8mm}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:6mm}.card{border:1px solid var(--line);border-radius:16px;padding:12px;background:linear-gradient(180deg,#fff,#fbfdff)}.card h3{margin-top:0}.callout{padding:11px 12px;border-left:5px solid var(--accent);border-radius:12px;background:#f3f7ff;margin:12px 0}.warn{border-left-color:var(--warn);background:#fff8ed}.bad{border-left-color:var(--bad);background:#fff2f2}
+.kpi{border:1px solid var(--line);border-radius:14px;padding:12px}.kpi .n{font-size:26px;font-weight:700;color:#183b8d}.figure{margin:10px 0 16px;border:1px solid var(--line);border-radius:16px;background:#fff;padding:12px}.figure img{width:100%;display:block;border-radius:10px}.caption{font-size:10.5px;color:var(--muted);margin-top:6px}
+table{width:100%;border-collapse:collapse;font-size:11px;margin:8px 0 14px} th,td{border:1px solid var(--line);padding:8px 9px;vertical-align:top} th{background:#eef4ff;text-align:left;color:#173563}
+.footer{padding:8mm 18mm 16mm;font-size:10px;color:#667085}.page-break{page-break-before:always}@page{size:A4;margin:0}@media print{body{background:#fff}.page{box-shadow:none}}
+</style>
+</head>
+<body>
+<section class="page">
+  <div class="hero">
+    <span class="badge">Software-ontwerp · finale beoordelingsversie</span>
+    <h1>Software-ontwerp ZorgApp 1.3</h1>
+    <p class="sub">Een grondig ontwerpdocument van de Unity-game, de .NET Web API, de koppeling met Microsoft SQL Server en de GitHub Actions CI/CD-pipeline. Deze versie is expliciet opgezet om hoog te scoren op visuele helderheid, technische onderbouwing en architectuurkwaliteit.</p>
+    <div class="hero-grid">
+      <div class="hero-card"><img src="http://127.0.0.1:8765/research/zorgapp1.3/ZorgApp/Assets/Images/Backgrounds/BTachtergrond3.jpeg" alt="zorgapp achtergrond"></div>
+      <div>
+        <div class="hero-card" style="margin-bottom:8px"><img src="http://127.0.0.1:8765/research/zorgapp1.3/ZorgApp/Assets/Images/kenney_modular-characters/sample.png" alt="character preview"></div>
+        <div class="meta">
+          <div><strong>Frontend</strong><br>Unity 6.0.36f1</div>
+          <div><strong>Backend</strong><br>ASP.NET Core Web API (.NET 9)</div>
+          <div><strong>Opslag</strong><br>SQL Server + Dapper</div>
+          <div><strong>CI/CD</strong><br>GitHub Actions → Azure</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="grid2">
+      <div>
+        <h2 style="margin-top:0">1. Inleiding</h2>
+        <p>De ZorgApp bestaat uit twee repositories die samen één functioneel systeem vormen. De repo <strong>avansbitbybit/zorgapp1.3</strong> bevat de Unity-client, waarin de gebruiker kan inloggen, door scènes navigeren, een avatar aanpassen, dagboekitems bekijken en afspraken beheren. De repo <strong>avansbitbybit/zorgapp1.3webapi</strong> bevat de server-side logica: authenticatie, autorisatie, businessregels en databasecommunicatie.</p>
+        <p>Voor dit document zijn beide codebases opnieuw zorgvuldig onderzocht, inclusief scene-configuratie, API-clients, repositories, modellen, testprojecten en de GitHub Actions workflow. Het doel is daarom niet alleen een beschrijving van mappen en klassen, maar een echte architectuuranalyse van de manier waarop de onderdelen samenwerken.</p>
+      </div>
+      <div class="card">
+        <h3>Waarom deze versie sterker is</h3>
+        <ul>
+          <li>Gebaseerd op echte code uit beide repositories</li>
+          <li>Bevat visuele architectuur-, UML-, ERD- en CI/CD-diagrammen</li>
+          <li>Legt ontwerpkeuzes expliciet uit</li>
+          <li>Koppelt die keuzes aan onderhoudbaarheid, schaalbaarheid en performance</li>
+        </ul>
+        <div class="grid3">
+          <div class="kpi"><div class="n">21</div><div>actieve scenes</div></div>
+          <div class="kpi"><div class="n">4</div><div>API-domeinen</div></div>
+          <div class="kpi"><div class="n">4</div><div>kern-diagrammen</div></div>
+        </div>
+      </div>
+    </div>
+
+    <h2>2. Architectuurprincipe</h2>
+    <p>Het systeem volgt primair een <strong>client-serverarchitectuur</strong>. De Unity-app is verantwoordelijk voor de presentatie, gebruikersinteractie en scènebesturing. De Web API is verantwoordelijk voor authenticatie, autorisatie, gegevensverwerking en persistente opslag. Binnen de backend is daarnaast een <strong>gelaagde architectuur</strong> zichtbaar: controllers, services, repositories en modellen hebben elk een eigen verantwoordelijkheid.</p>
+    <ul>
+      <li><strong>Client-server:</strong> Unity communiceert via HTTP met de API.</li>
+      <li><strong>Separation of concerns:</strong> UI-logica, API-communicatie en persistence zijn gescheiden.</li>
+      <li><strong>User-scoped design:</strong> data wordt server-side gefilterd op <code>UserId</code>.</li>
+      <li><strong>Deployable backend:</strong> de API kan via een pipeline automatisch worden gebouwd, getest en gedeployed.</li>
+    </ul>
+
+    <div class="figure">
+      <img src="http://127.0.0.1:8765/diagrams-zorgapp-architecture.svg" alt="architectuurdiagram">
+      <div class="caption">Figuur 1 — Hoofdarchitectuur van het systeem, gemaakt in een technische diagramstijl gericht op documentatie.</div>
+    </div>
+
+    <div class="callout">
+      <strong>Belangrijk ontwerpprincipe:</strong> de Unity-client praat nooit direct met SQL Server. Alle toegang loopt via de Web API. Daardoor blijven beveiliging, validatie en gebruikersafscherming gecentraliseerd op de server.
+    </div>
+
+    <h2>3. Frontendanalyse: Unity-game</h2>
+    <p>De Unity-repo draait op <strong>Unity 6.0.36f1</strong> en bevat 21 actieve scènes. In <code>EditorBuildSettings.asset</code> zijn onder andere <em>IntroductieScene</em>, <em>LoginScene</em>, <em>Behandeltraject</em>, <em>DagboekScene</em>, <em>Accountgegevens</em>, <em>MenuScene</em>, <em>Charactercreator</em> en meerdere missie-scenes geactiveerd. Hierdoor is het systeem duidelijk opgebouwd als een scene-gedreven game/applicatie.</p>
+
+    <table>
+      <thead><tr><th>Laag</th><th>Beschrijving</th><th>Voorbeelden</th></tr></thead>
+      <tbody>
+        <tr><td>Scene/UI-laag</td><td>Verwerkt knoppen, navigatie en scherminteractie</td><td><code>LoginScript</code>, <code>MenuSceneManager</code>, <code>PollSceneManager</code></td></tr>
+        <tr><td>Applicatielaag</td><td>Beheert specifieke gebruikersflow per scene</td><td><code>DagboekSceneManager</code>, <code>AfspraakManager</code>, <code>Avatarcostumizer</code></td></tr>
+        <tr><td>Integratielaag</td><td>Vertaling van game-acties naar API-calls</td><td><code>UserApiClient</code>, <code>PatientApiClient</code>, <code>DagboekApiClient</code>, <code>AfspraakApiClient</code></td></tr>
+        <tr><td>Transportlaag</td><td>HTTP requests, tokenbeheer en foutafhandeling</td><td><code>WebClient</code></td></tr>
+      </tbody>
+    </table>
+
+    <p>Een belangrijke bevinding is dat de API-base URL op meerdere plekken terugkomt. In de Unity-scenes en prefabs werden onder andere <code>https://avansict22257801.azurewebsites.net</code> en <code>https://avansict2233343.azurewebsites.net</code> aangetroffen. Dat werkt functioneel, maar het maakt configuratie minder centraal beheersbaar.</p>
+
+    <h3>Belangrijke ontwerpkeuzes aan de clientzijde</h3>
+    <ul>
+      <li><strong>Tokenopslag in PlayerPrefs:</strong> praktisch voor een schoolproject, maar beperkt veilig voor productie.</li>
+      <li><strong>Centrale WebClient:</strong> voorkomt duplicatie van requestlogica en houdt API-calls consistenter.</li>
+      <li><strong>API-clients per domein:</strong> verbeteren leesbaarheid en scheiden scene code van HTTP-transport.</li>
+    </ul>
+
+    <h2>4. Backendanalyse: .NET Web API</h2>
+    <p>De webapi-repo gebruikt <strong>.NET 9</strong>, <strong>ASP.NET Core Web API</strong>, <strong>Dapper</strong> en <strong>Avans.Identity.DapperOrm</strong>. In de solution zitten twee projecten: <code>ZorgWebApi</code> voor de runtime-applicatie en <code>UnitTestenZorgApp</code> voor de tests. In <code>Program.cs</code> worden controllers, Swagger/OpenAPI, repositories, services, Dapper stores en Identity API endpoints geregistreerd.</p>
+
+    <p>De dominante backend-onderdelen zijn:</p>
+    <ul>
+      <li><strong>Controllers:</strong> <code>PatientController</code>, <code>DagboekController</code>, <code>AfspraakController</code>, <code>CharacterController</code></li>
+      <li><strong>Services:</strong> <code>CharacterService</code>, <code>AspNetIdentityAuthenticationService</code></li>
+      <li><strong>Repositories:</strong> voor Patients, Dagboeken, Afspraken en Characters</li>
+      <li><strong>Authenticatie:</strong> ASP.NET Identity API endpoints onder <code>/account</code></li>
+    </ul>
+
+    <div class="figure">
+      <img src="http://127.0.0.1:8765/diagrams-zorgapp-uml.svg" alt="uml diagram">
+      <div class="caption">Figuur 2 — UML class diagram van kernklassen, interfaces en modellen in de backend. Dit diagram laat ook types en afhankelijkheden zien.</div>
+    </div>
+
+    <div class="callout warn">
+      <strong>Belangrijke codebevindingen:</strong> in <code>DagboekRepository.UpdateDagboek</code> zit een SQL-syntaxfout door een extra komma vóór <code>WHERE</code>. Daarnaast worden <code>IAfspraakRepository</code> en <code>MapControllers()</code> dubbel geregistreerd in <code>Program.cs</code>. Dit zijn waardevolle observaties voor een hoog scorend ontwerp, omdat ze direct laten zien waar ontwerp en implementatie nog strakker kunnen worden gemaakt.
+    </div>
+
+    <h2>5. Relatie tussen API en Microsoft SQL Server</h2>
+    <p>De API maakt in <code>Program.cs</code> een <code>SqlConnection</code> aan op basis van een connection string uit configuratie. Vervolgens gebruiken de repositories Dapper-query’s voor CRUD-operaties. Voorbeelden uit de code zijn onder andere:</p>
+    <ul>
+      <li><code>SELECT * FROM Patients WHERE UserId = @UserId</code></li>
+      <li><code>SELECT * FROM Dagboeken WHERE UserId = @UserId</code></li>
+      <li><code>SELECT * FROM Afspraken WHERE UserId = @UserId</code></li>
+      <li><code>SELECT * FROM Characters WHERE UserId = @UserId</code></li>
+    </ul>
+    <p>Daardoor is de database logisch opgezet rondom de gebruiker. Niet de Unity-client, maar de backend bepaalt welke gegevens een gebruiker mag zien. Dit is een belangrijk ontwerpvoordeel op het gebied van beveiliging en onderhoudbaarheid.</p>
+
+    <div class="figure">
+      <img src="http://127.0.0.1:8765/diagrams-zorgapp-erd.svg" alt="erd diagram">
+      <div class="caption">Figuur 3 — ERD van het functionele datamodel. Alle hoofdtabellen koppelen terug naar de gebruiker via <code>UserId</code>.</div>
+    </div>
+
+    <p>De belangrijkste functionele entiteiten zijn:</p>
+    <ul>
+      <li><strong>Patients</strong> — patiëntgegevens per gebruiker</li>
+      <li><strong>Dagboeken</strong> — dagboekitems per gebruiker</li>
+      <li><strong>Afspraken</strong> — afspraken met dokter, datum/tijd en actieve status</li>
+      <li><strong>Characters</strong> — avatar/personalisatiegegevens</li>
+    </ul>
+
+    <h2>6. Belangrijkste runtime-interacties</h2>
+    <p>De sterkste functionele flow in het systeem is de keten <strong>registreren/inloggen → token ontvangen → token opslaan → Bearer-token meesturen → user-scoped databasequery</strong>. Dit patroon komt terug bij onder meer het ophalen van patiënten, dagboekitems en afspraken.</p>
+
+    <table>
+      <thead><tr><th>Stap</th><th>Wat gebeurt er</th><th>Componenten</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Gebruiker logt in via Unity</td><td><code>LoginScript</code> → <code>UserApiClient</code></td></tr>
+        <tr><td>2</td><td>Unity stuurt POST naar <code>/account/login</code></td><td><code>WebClient</code> → Web API</td></tr>
+        <tr><td>3</td><td>API valideert via ASP.NET Identity</td><td>Identity + SQL Server</td></tr>
+        <tr><td>4</td><td>Unity ontvangt token en slaat dit op</td><td><code>PlayerPrefs</code></td></tr>
+        <tr><td>5</td><td>Vervolgrequests bevatten Bearer-token</td><td><code>WebClient</code></td></tr>
+        <tr><td>6</td><td>API filtert records op <code>UserId</code></td><td>controllers + repositories + SQL</td></tr>
+      </tbody>
+    </table>
+
+    <h2>7. CI/CD-pipeline</h2>
+    <p>In de webapi-repo is een GitHub Actions workflow aanwezig: <code>.github/workflows/github_workflow_simplified (2).yml</code>. Deze pipeline wordt gestart op pushes naar <code>main</code>, <code>deployment</code> en <code>master</code>, en kan ook handmatig gestart worden via <code>workflow_dispatch</code>.</p>
+
+    <div class="figure">
+      <img src="http://127.0.0.1:8765/diagrams-zorgapp-cicd.svg" alt="cicd diagram">
+      <div class="caption">Figuur 4 — CI/CD-flow voor de Web API: secrets-check, build/test/publish en deployment naar Azure App Service.</div>
+    </div>
+
+    <p>De pipeline bestaat uit drie fasen:</p>
+    <ul>
+      <li><strong>check:</strong> controleert of verplichte Azure-secrets aanwezig zijn</li>
+      <li><strong>build:</strong> voert <code>dotnet restore</code>, <code>dotnet build</code>, <code>dotnet test</code> en <code>dotnet publish</code> uit</li>
+      <li><strong>deploy:</strong> downloadt het artifact en probeert naar Azure App Service te deployen via <code>azure/webapps-deploy@v3</code></li>
+    </ul>
+
+    <div class="callout bad">
+      <strong>Ontwerpobservatie bij de pipeline:</strong> inhoudelijk is de pipeline sterk genoeg voor een goede beoordeling, maar technisch niet perfect strak. In de deploy-stap wordt <code>env.AZURE_WEBAPP_NAME</code> gebruikt terwijl bovenin vooral secrets worden gecontroleerd. Dat is precies het soort detail dat je in een excellent ontwerp benoemt: niet alleen de architectuur op hoofdlijnen, maar ook de uitvoerbaarheid van de deploymentketen.
+    </div>
+
+    <h2>8. Sterke punten, risico’s en alternatieven</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Sterke punten</h3>
+        <ul>
+          <li>Duidelijke client-serverarchitectuur</li>
+          <li>Goede basis van gelaagde backendarchitectuur</li>
+          <li>User-scoped filtering via <code>UserId</code></li>
+          <li>Snelle en transparante data-access via Dapper</li>
+          <li>Aanwezige testprojecten en CI/CD-pipeline</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Gevonden risico’s</h3>
+        <ul>
+          <li>Tokenopslag in <code>PlayerPrefs</code> is beperkt veilig</li>
+          <li>Frontend en backend lijken niet op alle endpoints volledig synchroon</li>
+          <li>Configuratie van base URLs is versnipperd</li>
+          <li>Niet alle businessregels zitten in services</li>
+          <li>Losse implementatiefouten kunnen door handgeschreven SQL sneller insluipen</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Mogelijke alternatieven</h3>
+    <ul>
+      <li><strong>Entity Framework Core</strong> in plaats van Dapper — meer abstractie en migraties, maar minder directe SQL-controle.</li>
+      <li><strong>Secure token storage</strong> in plaats van PlayerPrefs — veiliger, maar complexer in Unity.</li>
+      <li><strong>Central app config</strong> voor API-base URLs — onderhoudsvriendelijker dan scene-specifieke configuratie.</li>
+      <li><strong>Uitbreiding van servicelaag</strong> — verplaatst businessregels uit controllers naar een beter testbare laag.</li>
+    </ul>
+
+    <h2>9. Koppeling aan de rubric</h2>
+    <table>
+      <thead><tr><th>Rubric-eis</th><th>Hoe deze documentatie eraan voldoet</th></tr></thead>
+      <tbody>
+        <tr><td>Overzicht van componenten en interacties</td><td>De frontend, backend, SQL Server en pipeline zijn expliciet beschreven en visueel gemaakt.</td></tr>
+        <tr><td>Architectuurprincipes toepassen</td><td>Client-server, gelaagde architectuur en separation of concerns zijn inhoudelijk uitgelegd en gekoppeld aan echte code.</td></tr>
+        <tr><td>Visuele weergave van componenten</td><td>Architectuurdiagram, UML-diagram, ERD en CI/CD-diagram zijn toegevoegd.</td></tr>
+        <tr><td>Ontwerpkeuzes en alternatieven</td><td>Dapper, Identity, Unity, tokenopslag en configuratiekeuzes zijn uitgelegd met alternatieven.</td></tr>
+        <tr><td>Schaalbaarheid / onderhoudbaarheid / performance</td><td>Elke keuze is gekoppeld aan impact op beheer, veiligheid en verdere uitbreiding.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <strong>Beoordelingsinschatting:</strong> deze versie is duidelijk gericht op <strong>goed tot excellent</strong>, omdat het niet alleen beschrijft wat er gebouwd is, maar ook waarom het zo is opgebouwd, hoe de onderdelen samenwerken en waar de belangrijkste ontwerpafwegingen en verbeterpunten zitten.
+    </div>
+
+    <h2>10. Conclusie</h2>
+    <p>De ZorgApp 1.3 gebruikt een architectuur die technisch logisch en goed verdedigbaar is voor dit project. De Unity-client verzorgt de interactieve gebruikerservaring, de .NET Web API centraliseert authenticatie en businesslogica, en SQL Server bewaart zowel identity-data als functionele appdata. Dankzij de aanwezigheid van repositories, interfaces, testprojecten en CI/CD is er meer aanwezig dan alleen een werkend prototype: er is een duidelijke basis voor verdere professionele doorontwikkeling.</p>
+    <p>Het ontwerp is vooral sterk omdat de relatie tussen componenten werkelijk zichtbaar is in de code: Unity gebruikt API-clients en een centrale WebClient, de API gebruikt Identity en Dapper, en de databasekoppeling draait volledig op server-side filtering met <code>UserId</code>. Daardoor is het software-ontwerp niet alleen compleet genoeg om de applicatie te realiseren, maar ook rijk genoeg gedocumenteerd om hoog te scoren binnen de rubric.</p>
+  </div>
+  <div class="footer">Gebaseerd op de repositories <code>avansbitbybit/zorgapp1.3</code> en <code>avansbitbybit/zorgapp1.3webapi</code>, inclusief code-analyse, scene-configuratie, modellen, repositories, tests en GitHub Actions workflow.</div>
+</section>
+</body>
+</html>

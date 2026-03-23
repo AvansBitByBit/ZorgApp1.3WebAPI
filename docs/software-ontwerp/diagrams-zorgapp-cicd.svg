@@ -1,0 +1,39 @@
+<svg viewBox="0 0 1000 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5e5e5" stroke-width="0.5"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#9b59b6"/></marker>
+  </defs>
+  <rect width="1000" height="360" fill="#fafafa"/>
+  <rect width="1000" height="360" fill="url(#grid)"/>
+  <text x="40" y="40" font-family="monospace" font-size="14" fill="#333" font-weight="bold">WEBAPI_PIPELINE</text>
+  <text x="190" y="40" font-family="monospace" font-size="12" fill="#888">[ CI_CD ]</text>
+
+  <rect x="40" y="120" width="220" height="110" fill="#fff" stroke="#f39c12" stroke-width="2"/>
+  <text x="150" y="145" font-family="monospace" font-size="12" fill="#f39c12" text-anchor="middle" font-weight="bold">CHECK_JOB</text>
+  <text x="150" y="170" font-family="monospace" font-size="10" fill="#666" text-anchor="middle">validate required secrets</text>
+  <text x="150" y="188" font-family="monospace" font-size="9" fill="#999" text-anchor="middle">AZURE_WEBAPP_NAME</text>
+  <text x="150" y="203" font-family="monospace" font-size="9" fill="#999" text-anchor="middle">AZURE_WEBAPP_PUBLISH_USERNAME</text>
+  <text x="150" y="218" font-family="monospace" font-size="9" fill="#999" text-anchor="middle">AZURE_WEBAPP_PUBLISH_PASSWORD</text>
+
+  <rect x="390" y="95" width="220" height="160" fill="#fff" stroke="#3498db" stroke-width="2"/>
+  <text x="500" y="120" font-family="monospace" font-size="12" fill="#3498db" text-anchor="middle" font-weight="bold">BUILD_JOB</text>
+  <text x="500" y="145" font-family="monospace" font-size="10" fill="#666" text-anchor="middle">actions/checkout@v4</text>
+  <text x="500" y="163" font-family="monospace" font-size="10" fill="#666" text-anchor="middle">setup-dotnet 9.0.x</text>
+  <text x="500" y="181" font-family="monospace" font-size="10" fill="#666" text-anchor="middle">dotnet restore</text>
+  <text x="500" y="199" font-family="monospace" font-size="10" fill="#666" text-anchor="middle">dotnet build --no-restore</text>
+  <text x="500" y="217" font-family="monospace" font-size="10" fill="#666" text-anchor="middle">dotnet test --no-build</text>
+  <text x="500" y="235" font-family="monospace" font-size="10" fill="#666" text-anchor="middle">dotnet publish -> artifact</text>
+
+  <rect x="740" y="120" width="220" height="110" fill="#fff" stroke="#27ae60" stroke-width="2"/>
+  <text x="850" y="145" font-family="monospace" font-size="12" fill="#27ae60" text-anchor="middle" font-weight="bold">DEPLOY_JOB</text>
+  <text x="850" y="170" font-family="monospace" font-size="10" fill="#666" text-anchor="middle">download artifact</text>
+  <text x="850" y="188" font-family="monospace" font-size="10" fill="#666" text-anchor="middle">azure/webapps-deploy@v3</text>
+  <text x="850" y="206" font-family="monospace" font-size="9" fill="#999" text-anchor="middle">deploy to Azure App Service</text>
+
+  <path d="M 260 175 L 390 175" stroke="#9b59b6" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 610 175 L 740 175" stroke="#9b59b6" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="325" y="165" font-family="monospace" font-size="9" fill="#9b59b6" text-anchor="middle">needs: check</text>
+  <text x="675" y="165" font-family="monospace" font-size="9" fill="#9b59b6" text-anchor="middle">needs: build</text>
+
+  <text x="500" y="325" font-family="monospace" font-size="10" fill="#999" text-anchor="middle">github actions pipeline in the webapi repo builds, tests, publishes and deploys the api to azure</text>
+</svg>
